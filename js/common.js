@@ -1,5 +1,8 @@
 $(function() {
 
+	$('.partners-items').owlCarousel({
+		items: 4
+	});
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {

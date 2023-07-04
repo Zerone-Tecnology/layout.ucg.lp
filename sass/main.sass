@@ -71,11 +71,13 @@ h1
 		color: #fff
 a
 	color: $text
+	text-decoration: none
 .title
 	text-transform: uppercase
 	color: $accent
 	display: inline-block
 	padding-bottom: 25px
+	font-size: 50px
 	&.line::after
 		content: ''
 		display: block
@@ -97,8 +99,10 @@ header
 					padding: 15px
 article
 	padding: 50px 0
-#about
+#main
 	color: $accent
+	.title
+		margin-top: 0
 	.blocks
 		display: flex
 		flex-direction: column
@@ -212,3 +216,15 @@ article
 				font-weight: 600
 			.desc
 				font-size: 16px
+#about
+	background: #DFE6F5 url('../img/about_bg.jpg')
+	background-repeat: no-repeat
+	background-position: 100% 0
+	&::after
+		content: ''
+		position: absolute
+		left: 50%
+		top: 0
+		width: 50%
+		height: 100%
+		background: linear-gradient(90.5deg, #DFE6F5 5%, rgba(223, 230, 245, 0) 65.59%)

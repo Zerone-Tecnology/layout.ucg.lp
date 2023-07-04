@@ -73,6 +73,7 @@ h1 {
 
 a {
   color: #454545;
+  text-decoration: none;
 }
 
 .title {
@@ -80,6 +81,7 @@ a {
   color: #1A1042;
   display: inline-block;
   padding-bottom: 25px;
+  font-size: 50px;
 }
 .title.line::after {
   content: "";
@@ -110,30 +112,33 @@ article {
   padding: 50px 0;
 }
 
-#about {
+#main {
   color: #1A1042;
 }
-#about .blocks {
+#main .title {
+  margin-top: 0;
+}
+#main .blocks {
   display: flex;
   flex-direction: column;
 }
-#about .blocks .block {
+#main .blocks .block {
   margin-bottom: 15px;
 }
-#about .blocks .block .bl {
+#main .blocks .block .bl {
   font-weight: bold;
   width: 30%;
   display: inline-block;
 }
-#about .blocks .block .bl.long {
+#main .blocks .block .bl.long {
   width: 100%;
 }
-#about .blocks .block .br {
+#main .blocks .block .br {
   display: inline-block;
   width: 60%;
   vertical-align: top;
 }
-#about .timer {
+#main .timer {
   background: linear-gradient(268.58deg, #FFA600 -13.7%, #1D0677 100%);
   height: 150px;
   width: 100%;
@@ -142,7 +147,7 @@ article {
   margin-top: 25px;
   position: relative;
 }
-#about .timer::after, #about .timer::before {
+#main .timer::after, #main .timer::before {
   content: "";
   position: absolute;
   width: 40px;
@@ -152,20 +157,20 @@ article {
   top: 50%;
   margin-top: -25px;
 }
-#about .timer::before {
+#main .timer::before {
   left: -20px;
 }
-#about .timer::after {
+#main .timer::after {
   right: -20px;
 }
-#about .timer .bt {
+#main .timer .bt {
   color: #fff;
   font-size: 72px;
   flex: 1;
   text-align: center;
   position: relative;
 }
-#about .timer .bt::after {
+#main .timer .bt::after {
   content: "";
   position: absolute;
   height: 50%;
@@ -174,10 +179,10 @@ article {
   width: 1px;
   background-color: #fff;
 }
-#about .timer .bt:last-child::after {
+#main .timer .bt:last-child::after {
   content: none;
 }
-#about .timer .bt span {
+#main .timer .bt span {
   font-size: 12px;
   display: block;
   margin-top: -25px;
@@ -254,4 +259,19 @@ article {
 }
 #speakers .blocks .block .desc {
   font-size: 16px;
+}
+
+#about {
+  background: #DFE6F5 url("../img/about_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+#about::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90.5deg, #DFE6F5 5%, rgba(223, 230, 245, 0) 65.59%);
 }/*# sourceMappingURL=main.css.map */

@@ -69,15 +69,6 @@ h1
 		background-color: $gold
 		text-decoration: none
 		color: #fff
-i.arr
-	background-image: url('../img/arr.png')
-	background-repeat: no-repeat
-	background-size: contain
-	background-position: 0 100%
-	width: 35px
-	height: 15px
-	display: inline-block
-	margin-left: 10px
 a
 	color: $text
 .title
@@ -85,7 +76,7 @@ a
 	color: $accent
 	display: inline-block
 	padding-bottom: 25px
-	&::after
+	&.line::after
 		content: ''
 		display: block
 		height: 3px
@@ -166,3 +157,58 @@ article
 				font-size: 12px
 				display: block
 				margin-top: -25px
+#speakers
+	text-align: center
+	.country
+		background-image: url('../img/flags.png')
+		background-repeat: no-repeat
+		width: 40px
+		padding-left: 40px
+		position: absolute
+		top: 15px
+		left: 15px
+		z-index: 0
+		&.turkey
+			background-position: 0 0
+		&.ukraine
+			background-position: 0 -40px
+		&.morocco
+			background-position: 0 -85px
+		&.qazaqstan
+			background-position: 0 -120px
+		&.australia
+			background-position: 0 -210px
+		&.singapore
+			background-position: 0 -330px
+		&.italy
+			background-position: 0 -165px
+		&.russia
+			background-position: 0 -250px
+	.blocks
+		display: flex
+		flex-wrap: wrap
+		.block
+			width: 31%
+			text-align: left
+			padding: 15px
+			position: relative
+			.img
+				text-align: center
+				border-radius: 24px
+				background: linear-gradient(289.9deg, #DBD6EF -5.47%, rgba(241, 241, 241, 0) 112.91%)
+				overflow: hidden
+				position: relative
+				img
+					height: 100%
+			.name
+				font-size: 30px
+				font-weight: bold
+				color: $accent
+				margin-bottom: 0
+			.category
+				color: $gold
+				text-transform: uppercase
+				margin-top: 0
+				font-weight: 600
+			.desc
+				font-size: 16px

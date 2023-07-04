@@ -71,17 +71,6 @@ h1 {
   color: #fff;
 }
 
-i.arr {
-  background-image: url("../img/arr.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0 100%;
-  width: 35px;
-  height: 15px;
-  display: inline-block;
-  margin-left: 10px;
-}
-
 a {
   color: #454545;
 }
@@ -92,7 +81,7 @@ a {
   display: inline-block;
   padding-bottom: 25px;
 }
-.title::after {
+.title.line::after {
   content: "";
   display: block;
   height: 3px;
@@ -192,4 +181,77 @@ article {
   font-size: 12px;
   display: block;
   margin-top: -25px;
+}
+
+#speakers {
+  text-align: center;
+}
+#speakers .country {
+  background-image: url("../img/flags.png");
+  background-repeat: no-repeat;
+  width: 40px;
+  padding-left: 40px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 0;
+}
+#speakers .country.turkey {
+  background-position: 0 0;
+}
+#speakers .country.ukraine {
+  background-position: 0 -40px;
+}
+#speakers .country.morocco {
+  background-position: 0 -85px;
+}
+#speakers .country.qazaqstan {
+  background-position: 0 -120px;
+}
+#speakers .country.australia {
+  background-position: 0 -210px;
+}
+#speakers .country.singapore {
+  background-position: 0 -330px;
+}
+#speakers .country.italy {
+  background-position: 0 -165px;
+}
+#speakers .country.russia {
+  background-position: 0 -250px;
+}
+#speakers .blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+#speakers .blocks .block {
+  width: 31%;
+  text-align: left;
+  padding: 15px;
+  position: relative;
+}
+#speakers .blocks .block .img {
+  text-align: center;
+  border-radius: 24px;
+  background: linear-gradient(289.9deg, #DBD6EF -5.47%, rgba(241, 241, 241, 0) 112.91%);
+  overflow: hidden;
+  position: relative;
+}
+#speakers .blocks .block .img img {
+  height: 100%;
+}
+#speakers .blocks .block .name {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1A1042;
+  margin-bottom: 0;
+}
+#speakers .blocks .block .category {
+  color: #B17427;
+  text-transform: uppercase;
+  margin-top: 0;
+  font-weight: 600;
+}
+#speakers .blocks .block .desc {
+  font-size: 16px;
 }/*# sourceMappingURL=main.css.map */

@@ -4,13 +4,13 @@ $(function() {
 		items: 4
 	});
 	$('.gallery-items-one').owlCarousel({
-		items: 5,
+		items: 4,
 		autoplay: true,
 		rtl: true,
 		dots: false
 	});
 	$('.gallery-items-second').owlCarousel({
-		items: 5,
+		items: 4,
 		autoplay: true,
 		dots: false
 	});

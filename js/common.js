@@ -3,6 +3,18 @@ $(function() {
 	$('.partners-items').owlCarousel({
 		items: 4
 	});
+	$('.gallery-items-one').owlCarousel({
+		items: 5,
+		autoplay: true,
+		rtl: true,
+		dots: false
+	});
+	$('.gallery-items-second').owlCarousel({
+		items: 5,
+		autoplay: true,
+		dots: false
+	});
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {

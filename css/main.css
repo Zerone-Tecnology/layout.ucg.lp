@@ -84,6 +84,7 @@ a {
   display: inline-block;
   padding-bottom: 25px;
   font-size: 50px;
+  line-height: 1.2em;
 }
 .title.line::after {
   content: "";
@@ -112,6 +113,10 @@ header nav ul li a {
 
 article {
   padding: 50px 0;
+}
+
+#video-slider {
+  padding-top: 0;
 }
 
 #main {
@@ -278,8 +283,13 @@ article {
   height: 100%;
   background: linear-gradient(90.5deg, #DFE6F5 5%, rgba(223, 230, 245, 0) 65.59%);
 }
+#about .title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 #about .btn {
   display: inline-block;
+  margin-top: 25px;
 }
 
 #partners {
@@ -296,4 +306,63 @@ article {
 #info {
   background: linear-gradient(268.58deg, #FFA600 -13.7%, #1D0677 100%);
   color: #fff;
+}
+
+#advantages {
+  text-align: center;
+}
+#advantages .title {
+  width: 520px;
+}
+#advantages .advantages-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+#advantages .item {
+  width: 30%;
+  text-align: center;
+  padding: 15px;
+  background-color: #F0F0F0;
+  margin: 15px 5px 70px;
+  border-radius: 15px;
+  position: relative;
+}
+#advantages .item .icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -50px;
+  background: linear-gradient(268.58deg, #FFA600 -13.7%, #1D0677 100%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+}
+#advantages .item .icon img {
+  display: inline-block;
+  padding-top: 10px;
+}
+
+#sections {
+  background-image: url("./img/bg_section.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 450px;
+}
+
+#lasttime {
+  text-align: center;
+}
+#lasttime .gallery-items {
+  text-align: left;
+}
+#lasttime .gallery-items .images {
+  overflow: hidden;
+  display: inline-block;
+  padding: 5px;
+}
+#lasttime .gallery-items .images img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

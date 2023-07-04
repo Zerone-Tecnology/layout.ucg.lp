@@ -80,6 +80,7 @@ a
 	display: inline-block
 	padding-bottom: 25px
 	font-size: 50px
+	line-height: 1.2em
 	&.line::after
 		content: ''
 		display: block
@@ -101,6 +102,8 @@ header
 					padding: 15px
 article
 	padding: 50px 0
+#video-slider
+	padding-top: 0
 #main
 	color: $accent
 	.title
@@ -231,8 +234,12 @@ article
 		width: 50%
 		height: 100%
 		background: linear-gradient(90.5deg, #DFE6F5 5%, rgba(223, 230, 245, 0) 65.59%)
+	.title
+		margin-bottom: 0
+		padding-bottom: 0
 	.btn
 		display: inline-block
+		margin-top: 25px
 #partners
 	text-align: center
 	.partners-items
@@ -244,3 +251,50 @@ article
 #info
 	background: linear-gradient(268.58deg, #FFA600 -13.7%, #1D0677 100%)
 	color: #fff
+#advantages
+	text-align: center
+	.title
+		width: 520px
+	.advantages-items
+		display: flex
+		flex-wrap: wrap
+	.item
+		width: 30%
+		text-align: center
+		padding: 15px
+		background-color: #F0F0F0
+		margin: 15px 5px 70px
+		border-radius: 15px
+		position: relative
+		.icon
+			position: absolute
+			left: 0
+			right: 0
+			margin: 0 auto
+			top: -50px
+			background: linear-gradient(268.58deg, #FFA600 -13.7%, #1D0677 100%)
+			width: 80px
+			height: 80px
+			border-radius: 50%
+			text-align: center
+			img
+				display: inline-block
+				padding-top: 10px
+#sections
+	background-image: url('./img/bg_section.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	position: fixed
+	height: 450px
+#lasttime
+	text-align: center
+	.gallery-items
+		text-align: left
+		.images
+			// height: 400px
+			overflow: hidden
+			display: inline-block
+			// width: 30%
+			padding: 5px
+			img
+				width: 100%

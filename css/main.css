@@ -487,6 +487,18 @@ footer p {
 footer a {
   color: #fff;
 }
+footer .social ul {
+  padding: 0;
+  margin: 0;
+}
+footer .social ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+footer .social ul li a {
+  display: block;
+  padding: 0 10px;
+}
 footer .copy {
   text-align: right;
   font-size: 14px;

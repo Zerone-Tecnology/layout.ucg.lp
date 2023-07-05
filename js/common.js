@@ -33,26 +33,39 @@ $(function() {
 		items: 4,
 		responsive: {
 			0:{
-				items: 4
+				items: 2
 			},
 			1280:{
 				items: 3
-			},
-			940:{
-				items: 2
-			}
+			}			
 		}
 	});
 
 	$('.gallery-items-one').owlCarousel({
-		items: 4,
+		items: 5,
+		responsive: {
+			0:{
+				items: 3
+			},
+			1280:{
+				items: 4
+			}		
+		},
 		autoplay: true,
 		rtl: true,
 		dots: false
 	});
 
 	$('.gallery-items-second').owlCarousel({
-		items: 4,
+		items: 5,
+		responsive: {
+			0:{
+				items: 3
+			},
+			1280:{
+				items: 4
+			}		
+		},
 		autoplay: true,
 		dots: false
 	});

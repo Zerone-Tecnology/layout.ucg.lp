@@ -343,7 +343,6 @@ section {
 
 #advantages {
   text-align: center;
-  margin-bottom: 400px;
 }
 #advantages .title {
   width: 520px;
@@ -382,8 +381,8 @@ section {
   background-image: url("../img/bg_section.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
-  height: 100vh;
+  background-attachment: fixed !important;
+  height: 400px;
   width: 100%;
   top: 0;
   z-index: -99;
@@ -558,6 +557,9 @@ footer .copy img {
   #speakers .blocks .block {
     width: 44%;
   }
+  #partners .partners-items img {
+    width: 100%;
+  }
   #advantages .item {
     width: 42%;
   }
@@ -567,8 +569,34 @@ footer .copy img {
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  header .logo {
+    width: 70%;
+  }
+  header nav {
+    display: none;
+  }
+  #main .timer {
+    height: auto;
+    padding: 15px 0;
+    overflow: hidden;
+  }
+  #main .timer .bt {
+    font-size: 42px;
+  }
+  #speakers .blocks .block {
+    width: 42%;
+  }
+  #about::after, #about::before {
+    content: none;
+  }
+  #advantages .title {
+    width: auto;
+  }
   #background-video {
     display: none;
+  }
+  #form .form-wrap {
+    padding: 0;
   }
   /*Disable Animation on Mobile Devices*/
   .animated {

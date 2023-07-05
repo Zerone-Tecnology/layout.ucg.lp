@@ -18,6 +18,10 @@
 		font-size: 22px
 	#speakers .blocks .block
 		width: 44%
+	#partners
+		.partners-items
+			img
+				width: 100%
 	#advantages .item
 		width: 42%
 
@@ -27,9 +31,30 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+	header 
+		.logo
+			width: 70%
+		nav
+			display: none
+	#main .timer
+		height: auto
+		padding: 15px 0
+		overflow: hidden
+		.bt
+			font-size: 42px
+	#speakers .blocks .block
+		width: 42%
+	#about
+		&::after, &::before
+			content: none
+	#advantages .title
+		width: auto
 
 	#background-video 
 		display: none    
+
+	#form .form-wrap
+		padding: 0
 	
 	/*Disable Animation on Mobile Devices*/
 	.animated

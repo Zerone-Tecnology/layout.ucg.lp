@@ -400,7 +400,7 @@ section {
   background: #fff;
   width: 450px;
   color: #454545;
-  padding: 15px;
+  padding: 30px 50px;
   border-radius: 10px;
 }
 #form .form-wrap form input[type=text], #form .form-wrap form select {
@@ -409,6 +409,14 @@ section {
   border-radius: 15px;
   width: 90%;
   margin: 10px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+#form .form-wrap form select {
+  width: 96%;
+}
+#form .form-wrap form input[type=button] {
+  font-family: "Montserrat", sans-serif;
 }
 #form .form-wrap .line {
   margin-bottom: 15px;

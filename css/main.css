@@ -121,6 +121,9 @@ section {
   padding-top: 0;
   overflow: hidden;
 }
+#video-slider img {
+  width: 100%;
+}
 
 #main {
   color: #1A1042;

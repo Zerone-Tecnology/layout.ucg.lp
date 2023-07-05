@@ -30,14 +30,27 @@ $(function() {
 	}, 1000);
 
 	$('.partners-items').owlCarousel({
-		items: 4
+		items: 4,
+		responsive: {
+			0:{
+				items: 4
+			},
+			1280:{
+				items: 3
+			},
+			940:{
+				items: 2
+			}
+		}
 	});
+
 	$('.gallery-items-one').owlCarousel({
 		items: 4,
 		autoplay: true,
 		rtl: true,
 		dots: false
 	});
+
 	$('.gallery-items-second').owlCarousel({
 		items: 4,
 		autoplay: true,

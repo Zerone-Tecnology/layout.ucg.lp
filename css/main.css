@@ -153,6 +153,9 @@ section {
 #main .blocks .block .bl.long {
   width: 100%;
 }
+#main .blocks .block .bl img {
+  vertical-align: middle;
+}
 #main .blocks .block .br {
   display: inline-block;
   width: 60%;
@@ -264,9 +267,10 @@ section {
 }
 #speakers .blocks .block .img img {
   height: 100%;
+  margin-bottom: -10px;
 }
 #speakers .blocks .block .name {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
   color: #1A1042;
   margin-bottom: 0;
@@ -282,10 +286,18 @@ section {
 }
 
 #about {
-  background: #DFE6F5 url("../img/about_bg.jpg");
-  background-repeat: no-repeat;
-  background-position: 100% 0;
   position: relative;
+  background: #DFE6F5;
+}
+#about::before {
+  content: "";
+  background: linear-gradient(90.5deg, #DFE6F5 5%, rgba(223, 230, 245, 0) 65.59%);
+  position: absolute;
+  left: 49%;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
 }
 #about::after {
   content: "";
@@ -294,7 +306,9 @@ section {
   top: 0;
   width: 50%;
   height: 100%;
-  background: linear-gradient(90.5deg, #DFE6F5 5%, rgba(223, 230, 245, 0) 65.59%);
+  background: url("../img/about_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
 }
 #about .title {
   margin-bottom: 0;
@@ -521,4 +535,77 @@ footer .copy {
 footer .copy img {
   width: 20px;
   vertical-align: middle;
+}
+
+/*==========  Desktop First Method  ==========*/
+@media only screen and (max-width: 1440px) {
+  .title {
+    font-size: 42px;
+  }
+  #speakers .blocks .block .name {
+    font-size: 24px;
+  }
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .title {
+    font-size: 22px;
+  }
+  #speakers .blocks .block {
+    width: 44%;
+  }
+  #advantages .item {
+    width: 42%;
+  }
+  #form .girl, #form .logo {
+    display: none;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  #background-video {
+    display: none;
+  }
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    transition-property: none !important;
+    /*CSS transforms*/
+    transform: none !important;
+    /*CSS animations*/
+    animation: none !important;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /**/
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/
+}
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/
 }/*# sourceMappingURL=main.css.map */

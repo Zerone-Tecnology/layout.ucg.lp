@@ -105,10 +105,23 @@ section
 	padding: 50px 0
 	background-color: #fff
 #video-slider
-	padding-top: 0
-	overflow: hidden
-	img
-		width: 100%
+	// padding-top: 0
+	// overflow: hidden
+	// height: 550px
+	padding: 0
+	// background: transparent
+	// img
+	// 	width: 100%
+	#background-video
+		width: 100vw
+		height: 100vh
+		object-fit: cover
+		// position: fixed
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		z-index: -1
 #main
 	color: $accent
 	.title
@@ -202,7 +215,7 @@ section
 		display: flex
 		flex-wrap: wrap
 		.block
-			width: 31%
+			width: 30%
 			text-align: left
 			padding: 15px
 			position: relative
@@ -270,7 +283,7 @@ section
 		display: flex
 		flex-wrap: wrap
 	.item
-		width: 30%
+		width: 29%
 		text-align: center
 		padding: 15px
 		background-color: #F0F0F0

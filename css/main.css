@@ -118,11 +118,18 @@ section {
 }
 
 #video-slider {
-  padding-top: 0;
-  overflow: hidden;
+  padding: 0;
 }
-#video-slider img {
-  width: 100%;
+#video-slider #background-video {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 #main {
@@ -243,7 +250,7 @@ section {
   flex-wrap: wrap;
 }
 #speakers .blocks .block {
-  width: 31%;
+  width: 30%;
   text-align: left;
   padding: 15px;
   position: relative;
@@ -332,7 +339,7 @@ section {
   flex-wrap: wrap;
 }
 #advantages .item {
-  width: 30%;
+  width: 29%;
   text-align: center;
   padding: 15px;
   background-color: #F0F0F0;

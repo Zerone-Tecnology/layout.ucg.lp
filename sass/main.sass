@@ -101,6 +101,49 @@ header
 				list-style-type: none
 				a
 					padding: 15px
+	.mainMenu
+		padding: 25px
+		position: relative
+		display: none
+#menuToggle
+	input
+		display: block
+		width: 50px
+		height: 50px
+		position: absolute
+		top: -7px
+		left: -5px
+		cursor: pointer
+		opacity: 0
+		z-index: 2
+		-webkit-touch-callout: none
+		&:checked ~ span
+			opacity: 1
+			transform: rotate(45deg) translate(1px, -1px)
+			background: #000
+			&:nth-last-child(1)
+				transform: rotate(-45deg) translate(0, -1px)
+			&:nth-last-child(2)
+				opacity: 0
+				transform: rotate(0deg) scale(0.2, 0.2)
+	span
+		display: block
+		width: 33px
+		height: 4px
+		margin-bottom: 5px
+		position: relative
+		background: #000
+		border-radius: 3px
+		z-index: 1
+		transform-origin: 4px 0px
+		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease
+
+		&:first-child
+			transform-origin: 0% 0%
+
+		&:nth-last-child(2)
+			transform-origin: 0% 100%
+
 section
 	padding: 50px 0
 	background-color: #fff
@@ -230,6 +273,7 @@ section
 				img
 					height: 100%
 					margin-bottom: -10px
+					margin-top: 25px
 			.name
 				font-size: 28px
 				font-weight: bold
@@ -244,14 +288,16 @@ section
 				font-size: 16px
 #about
 	position: relative
-	background: #DFE6F5
+	background: #19085B
+	color: #fff
 	&::before
 		content: ''
-		background: linear-gradient(90.5deg, #DFE6F5 5%, rgba(223, 230, 245, 0) 65.59%)
+		// background: linear-gradient(90.5deg, #DFE6F5 5%, rgba(223, 230, 245, 0) 65.59%)
+		background: linear-gradient(274.15deg, rgba(255, 166, 0, 0) 2.41%, #AC6D21 50.48%, #19085B 99.56%)
 		position: absolute
-		left: 49%
+		left: 0
 		top: 0
-		width: 50%
+		width: 100%
 		height: 100%
 		z-index: 1
 	&::after
@@ -267,6 +313,10 @@ section
 	.title
 		margin-bottom: 0
 		padding-bottom: 0
+		color: #fff
+	.content
+		position: relative
+		z-index: 3
 	.btn
 		display: inline-block
 		margin-top: 25px

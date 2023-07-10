@@ -1,4 +1,20 @@
 $(function() {
+	
+	if ($(window).width() > 1200) {
+    $('.partners-items').addClass("owl-carousel");
+
+		$('.partners-items').owlCarousel({
+			items: 4,
+			responsive: {
+				0:{
+					items: 2
+				},
+				1280:{
+					items: 3
+				}			
+			}
+		});
+	};
 
 	var countDownDate = new Date("Sep 18, 2023 09:00:00").getTime();
 
@@ -29,20 +45,12 @@ $(function() {
 		}
 	}, 1000);
 
-	$('.partners-items').owlCarousel({
-		items: 4,
-		responsive: {
-			0:{
-				items: 2
-			},
-			1280:{
-				items: 3
-			}			
-		}
-	});
+	$('.gallery-items-first').addClass("owl-carousel");
+	$('.gallery-items-second').addClass("owl-carousel");
 
-	$('.gallery-items-one').owlCarousel({
+	$('.gallery-items-first').owlCarousel({
 		items: 5,
+		autoplayTimeout: 1000,
 		responsive: {
 			0:{
 				items: 3
@@ -58,6 +66,7 @@ $(function() {
 
 	$('.gallery-items-second').owlCarousel({
 		items: 5,
+		autoplayTimeout: 1000,
 		responsive: {
 			0:{
 				items: 3
@@ -69,6 +78,11 @@ $(function() {
 		autoplay: true,
 		dots: false
 	});
+
+	function stopCarousel() {
+		var owl = $('.owl-carousel');
+		owl.removeClass('owl-carousel');
+	}
 
 	//SVG Fallback
 	if(!Modernizr.svg) {

@@ -55,8 +55,17 @@
 	#about
 		&::after, &::before
 			content: none
-	#advantages .title
-		width: auto
+	#info
+		text-align: center
+	#advantages 
+		.title
+			width: auto
+		.advantages-items
+			.item
+				width: 90%
+				margin: 50px 0 0 0
+				.icon img
+					width: 70%
 
 	#background-video 
 		display: none    
@@ -64,6 +73,17 @@
 	#form .form-wrap
 		padding: 0
 	
+	footer 
+		padding-top: 40px
+		.logo
+			display: inline-block
+			margin-bottom: 25px
+			&.logo-2
+				margin-top: 0
+				float: right
+		.social
+			margin-top: 25px
+
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -88,11 +108,34 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	
+	#main .timer .bt
+		font-size: 25px
+		span
+			margin-top: 0
+	#advantages .advantages-items 
+		.owl-stage
+			left: -10px
+		.item
+			width: 85%
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	/**/
+	body
+		font-size: 14px
+	#speakers .blocks .block
+		width: 40%
+		.name
+			font-size: 16px
+		.desc
+			font-size: 14px
+		.img img
+			width: 100%
+			height: auto
+	#form .form-wrap form
+		padding: 15px
+		input[type=text], select
+			width: 55%
 
 /*==========  Mobile First Method  ==========*/
 

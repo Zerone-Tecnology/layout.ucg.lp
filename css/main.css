@@ -112,7 +112,7 @@ header nav ul li a {
   padding: 15px;
 }
 header .mainMenu {
-  padding: 25px;
+  padding: 15px;
   position: relative;
   display: none;
 }
@@ -654,14 +654,38 @@ footer .copy img {
   #about::after, #about::before {
     content: none;
   }
+  #info {
+    text-align: center;
+  }
   #advantages .title {
     width: auto;
+  }
+  #advantages .advantages-items .item {
+    width: 90%;
+    margin: 50px 0 0 0;
+  }
+  #advantages .advantages-items .item .icon img {
+    width: 70%;
   }
   #background-video {
     display: none;
   }
   #form .form-wrap {
     padding: 0;
+  }
+  footer {
+    padding-top: 40px;
+  }
+  footer .logo {
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+  footer .logo.logo-2 {
+    margin-top: 0;
+    float: right;
+  }
+  footer .social {
+    margin-top: 25px;
   }
   /*Disable Animation on Mobile Devices*/
   .animated {
@@ -675,11 +699,43 @@ footer .copy img {
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /**/
+  #main .timer .bt {
+    font-size: 25px;
+  }
+  #main .timer .bt span {
+    margin-top: 0;
+  }
+  #advantages .advantages-items .owl-stage {
+    left: -10px;
+  }
+  #advantages .advantages-items .item {
+    width: 85%;
+  }
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /**/
+  body {
+    font-size: 14px;
+  }
+  #speakers .blocks .block {
+    width: 40%;
+  }
+  #speakers .blocks .block .name {
+    font-size: 16px;
+  }
+  #speakers .blocks .block .desc {
+    font-size: 14px;
+  }
+  #speakers .blocks .block .img img {
+    width: 100%;
+    height: auto;
+  }
+  #form .form-wrap form {
+    padding: 15px;
+  }
+  #form .form-wrap form input[type=text], #form .form-wrap form select {
+    width: 55%;
+  }
 }
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */

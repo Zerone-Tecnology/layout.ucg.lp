@@ -1,5 +1,18 @@
 $(function() {
 
+	$('#menuToggleChkd').change(function(){
+		if ($(this).is(':checked')) {
+			$('nav').addClass('show');
+		} else {
+			$('nav').removeClass('show');
+		}
+	})
+	$("nav ul a").click(function(){
+		$('nav').removeClass('show');
+		$('#menuToggleChkd').prop('checked', false); 
+	})
+	
+
 	$("nav ul a").mPageScroll2id();
 	
 	if ($(window).width() > 1200) {
@@ -25,9 +38,11 @@ $(function() {
 		$('.advantages-items').owlCarousel({
 			items: 1,
 			loop: true,
-			stagePadding: 50,
 			dots: false,
 			responsive: {
+				0:{
+					stagePadding: 50,
+				},
 				480:{
 					stagePadding: 10,
 				}	

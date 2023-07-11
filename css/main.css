@@ -269,40 +269,6 @@ section {
 #speakers {
   text-align: center;
 }
-#speakers .country {
-  background-image: url("../img/flags.png");
-  background-repeat: no-repeat;
-  width: 40px;
-  padding-left: 40px;
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  z-index: 0;
-}
-#speakers .country.turkey {
-  background-position: 0 0;
-}
-#speakers .country.ukraine {
-  background-position: 0 -40px;
-}
-#speakers .country.morocco {
-  background-position: 0 -85px;
-}
-#speakers .country.qazaqstan {
-  background-position: 0 -120px;
-}
-#speakers .country.australia {
-  background-position: 0 -210px;
-}
-#speakers .country.singapore {
-  background-position: 0 -330px;
-}
-#speakers .country.italy {
-  background-position: 0 -165px;
-}
-#speakers .country.russia {
-  background-position: 0 -250px;
-}
 #speakers .blocks {
   display: flex;
   flex-wrap: wrap;
@@ -339,6 +305,41 @@ section {
 }
 #speakers .blocks .block .desc {
   font-size: 16px;
+}
+
+.country {
+  background-image: url("../img/flags.png");
+  background-repeat: no-repeat;
+  width: 40px;
+  padding-left: 40px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 0;
+}
+.country.turkey {
+  background-position: 0 0;
+}
+.country.ukraine {
+  background-position: 0 -40px;
+}
+.country.morocco {
+  background-position: 0 -85px;
+}
+.country.qazaqstan {
+  background-position: 0 -120px;
+}
+.country.australia {
+  background-position: 0 -210px;
+}
+.country.singapore {
+  background-position: 0 -330px;
+}
+.country.italy {
+  background-position: 0 -165px;
+}
+.country.russia {
+  background-position: 0 -250px;
 }
 
 #about {
@@ -401,6 +402,108 @@ section {
   justify-content: center;
   height: 100%;
   align-items: center;
+}
+
+#programm .tabs {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: end;
+}
+#programm .tab {
+  padding: 25px;
+  background-color: #DFE6F5;
+  border-radius: 45px;
+  text-align: center;
+  margin-left: 15px;
+}
+#programm .tab:hover {
+  cursor: pointer;
+}
+#programm .tab span {
+  font-size: 14px;
+  display: block;
+}
+#programm .tab.active {
+  background: #DFA231;
+}
+#programm .tab-content {
+  margin-top: 25px;
+}
+#programm .tab-content [data-tab-content] {
+  display: none;
+}
+#programm .tab-content .active[data-tab-content] {
+  display: block;
+}
+#programm .tab-content .list {
+  background-color: #DFE6F5;
+  padding: 15px;
+  border-radius: 50px;
+  display: flex;
+  margin-bottom: 10px;
+}
+#programm .tab-content .list .lb {
+  padding: 15px;
+}
+#programm .tab-content .list .time {
+  background-color: #fff;
+  display: inline-block;
+  padding: 0 15px;
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+#programm .tab-content .list .type {
+  background-color: #DFA231;
+  text-align: center;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 0 15px;
+  color: #fff;
+}
+#programm .tab-content .list .img {
+  background-color: #fff;
+  border-radius: 15px;
+}
+#programm .tab-content .list .img img {
+  width: 100%;
+}
+#programm .tab-content .list .name {
+  font-weight: 600;
+  font-size: 28px;
+  position: relative;
+}
+#programm .tab-content .list .country {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-left: 0;
+}
+#programm .tab-content .list .left, #programm .tab-content .list .center {
+  width: 20%;
+}
+#programm .tab-content .list .right {
+  width: 80%;
+}
+#programm .tab-content .list.accent {
+  background: linear-gradient(268.58deg, #FFA600 -13.7%, #1D0F59 100%);
+}
+#programm .tab-content .list.accent .name {
+  color: #fff;
+}
+#programm .btn-download {
+  background: transparent;
+  color: #7A859D;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 25px;
+}
+#programm .btn-download img {
+  vertical-align: middle;
 }
 
 #advantages {

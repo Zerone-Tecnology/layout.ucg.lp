@@ -57,6 +57,10 @@ h1 {
   display: none;
 }
 
+.containe, .container-fluid {
+  width: auto;
+}
+
 .btn {
   display: block;
   border-radius: 4px;
@@ -173,6 +177,7 @@ section {
 }
 
 #video-slider {
+  overflow: hidden;
   padding: 0;
 }
 #video-slider #background-video {
@@ -796,6 +801,31 @@ footer .copy img {
   #info {
     text-align: center;
   }
+  #programm .tab-content .list {
+    flex-wrap: wrap;
+  }
+  #programm .tab-content .list .left, #programm .tab-content .list .center {
+    width: 40%;
+  }
+  #programm .tab-content .list .right {
+    width: 100%;
+  }
+  #programm .tab-content .list .topic {
+    font-size: 16px;
+  }
+  #programm .tab-content .list.accent .left {
+    width: 35%;
+    padding: 0 10px 0 0;
+    vertical-align: middle;
+  }
+  #programm .tab-content .list.accent .left .time {
+    padding: 0 10px;
+    margin-bottom: 0;
+  }
+  #programm .tab-content .list.accent .right {
+    width: 60%;
+    padding: 0;
+  }
   #advantages .title {
     width: auto;
   }
@@ -865,6 +895,23 @@ footer .copy img {
 @media only screen and (max-width: 320px) {
   body {
     font-size: 14px;
+  }
+  #programm .tab-content .list {
+    flex-wrap: wrap;
+  }
+  #programm .tab-content .list .left {
+    width: 40%;
+    font-size: 12px;
+  }
+  #programm .tab-content .list .center {
+    width: 30%;
+    vertical-align: middle;
+  }
+  #programm .tab-content .list .center .img {
+    padding: 15px 0;
+  }
+  #programm .tab-content .list .name {
+    font-size: 22px;
   }
   #speakers .blocks .block {
     width: 44%;

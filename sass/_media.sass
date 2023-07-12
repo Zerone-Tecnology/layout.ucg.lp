@@ -82,6 +82,26 @@
 			content: none
 	#info
 		text-align: center
+	#programm .tab-content 
+		.list
+			flex-wrap: wrap
+			.left, .center
+				width: 40%
+			.right
+				width: 100%
+			.topic
+				font-size: 16px
+			&.accent
+				.left
+					width: 35%
+					padding: 0 10px 0 0
+					vertical-align: middle
+					.time
+						padding: 0 10px
+						margin-bottom: 0
+				.right
+					width: 60%
+					padding: 0
 	#advantages 
 		.title
 			width: auto
@@ -155,6 +175,19 @@
 @media only screen and (max-width : 320px)
 	body
 		font-size: 14px
+	#programm .tab-content 
+		.list
+			flex-wrap: wrap
+			.left
+				width: 40%
+				font-size: 12px
+			.center
+				width: 30%
+				vertical-align: middle
+				.img
+					padding: 15px	0
+			.name
+				font-size: 22px
 	#speakers .blocks .block
 		width: 44%
 		padding-right: 0

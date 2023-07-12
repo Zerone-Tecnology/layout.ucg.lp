@@ -443,16 +443,12 @@ section {
   margin: 0;
   padding: 0;
 }
-
-.tab:hover {
+.tabs .tab:hover {
   cursor: pointer;
 }
-.tab span {
+.tabs .tab span {
   font-size: 14px;
   display: block;
-}
-.tab.active {
-  background: #DFA231;
 }
 
 .tab-content {
@@ -587,6 +583,33 @@ section {
 
 #form {
   color: #fff;
+}
+#form .tabs .tab {
+  position: relative;
+  padding: 0 10px 0 25px;
+}
+#form .tabs .tab::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 5px;
+  border: 2px solid #454545;
+  border-radius: 50%;
+}
+#form .tabs .tab.active::after {
+  border-color: #DFA231;
+}
+#form .tabs .tab.active::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 4px;
+  top: 9px;
+  border-radius: 50%;
+  background-color: #DFA231;
 }
 #form .form-wrap {
   background: linear-gradient(284.99deg, #FF9400 -27.15%, #1B1143 103.5%);

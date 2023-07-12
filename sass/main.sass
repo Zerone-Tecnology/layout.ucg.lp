@@ -365,14 +365,12 @@ section
 	list-style-type: none
 	margin: 0
 	padding: 0
-.tab
-	&:hover
-		cursor: pointer
-	span
-		font-size: 14px
-		display: block
-	&.active
-		background: $yellow
+	.tab
+		&:hover
+			cursor: pointer
+		span
+			font-size: 14px
+			display: block
 .tab-content
 	margin-top: 25px
 	[data-tab-content],[data-tab-content2]
@@ -478,6 +476,31 @@ section
 				width: 100%
 #form
 	color: #fff
+	.tabs
+		.tab
+			position: relative
+			padding: 0 10px 0 25px
+			&::after
+				content: ''
+				position: absolute
+				width: 16px
+				height: 16px
+				left: 0
+				top: 5px
+				border: 2px solid $text
+				border-radius: 50%
+			&.active
+				&::after
+					border-color: $yellow
+				&::before
+					content: ''
+					position: absolute
+					width: 12px
+					height: 12px
+					left: 4px
+					top: 9px
+					border-radius: 50%
+					background-color: $yellow
 	.form-wrap
 		background: linear-gradient(284.99deg, #FF9400 -27.15%, #1B1143 103.5%)
 		border-radius: 25px

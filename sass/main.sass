@@ -350,65 +350,8 @@ section
 		border-radius: 45px
 		text-align: center
 		margin-left: 15px
-		&:hover
-			cursor: pointer
-		span
-			font-size: 14px
-			display: block
 		&.active
 			background: $yellow
-	.tab-content
-		margin-top: 25px
-		[data-tab-content]
-			display: none
-		.active[data-tab-content]
-			display: block
-		.list
-			background-color: #DFE6F5
-			padding: 15px
-			border-radius: 50px
-			display: flex
-			margin-bottom: 10px
-			.lb
-				padding: 15px
-			.time
-				background-color: #fff
-				display: inline-block
-				padding: 0 15px
-				text-align: center
-				border-radius: 15px
-				margin-bottom: 10px
-			.type
-				background-color: $yellow
-				text-align: center
-				border-radius: 15px
-				display: inline-block
-				padding: 0 15px
-				color: #fff
-			.img
-				background-color: #fff
-				border-radius: 15px
-				img
-					width: 100%
-			.name
-				font-weight: 600
-				font-size: 28px
-				position: relative
-			.country
-				display: inline-block
-				height: 20px
-				position: relative
-				top: 0
-				left: 0
-				padding-left: 0
-			.left, .center
-				width: 20%
-			.right
-				width: 80%
-			&.accent
-				background: linear-gradient(268.58deg, #FFA600 -13.7%, #1D0F59 100%)
-				.name
-					color: #fff
 	.btn-download
 		background: transparent
 		color: #7A859D
@@ -417,7 +360,71 @@ section
 		margin-top: 25px
 		img
 			vertical-align: middle
-
+.tabs
+	display: flex
+	list-style-type: none
+	margin: 0
+	padding: 0
+.tab
+	&:hover
+		cursor: pointer
+	span
+		font-size: 14px
+		display: block
+	&.active
+		background: $yellow
+.tab-content
+	margin-top: 25px
+	[data-tab-content],[data-tab-content2]
+		display: none
+	.active[data-tab-content],.active[data-tab-content2]
+		display: block
+	.list
+		background-color: #DFE6F5
+		padding: 15px
+		border-radius: 50px
+		display: flex
+		margin-bottom: 10px
+		.lb
+			padding: 15px
+		.time
+			background-color: #fff
+			display: inline-block
+			padding: 0 15px
+			text-align: center
+			border-radius: 15px
+			margin-bottom: 10px
+		.type
+			background-color: $yellow
+			text-align: center
+			border-radius: 15px
+			display: inline-block
+			padding: 0 15px
+			color: #fff
+		.img
+			background-color: #fff
+			border-radius: 15px
+			img
+				width: 100%
+		.name
+			font-weight: 600
+			font-size: 28px
+			position: relative
+		.country
+			display: inline-block
+			height: 20px
+			position: relative
+			top: 0
+			left: 0
+			padding-left: 0
+		.left, .center
+			width: 20%
+		.right
+			width: 80%
+		&.accent
+			background: linear-gradient(268.58deg, #FFA600 -13.7%, #1D0F59 100%)
+			.name
+				color: #fff
 #advantages
 	text-align: center
 	.title
@@ -479,7 +486,7 @@ section
 		overflow: hidden
 		h3
 			margin-top: 0
-		form
+		.form
 			background: #fff
 			width: 450px
 			color: $text

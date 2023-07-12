@@ -537,34 +537,43 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="form-wrap">
-							<form action="#">
+							<div class="form">
 								<h3>Регистрация</h3>
-								<input type="radio" name="userType" id="userTypeUR" value="ur">
-								<label for="userTypeUR">Физическое лицо</label>
-								<input type="radio" name="userType" id="userTypeFIZ" value="fiz">
-								<label for="userTypeFIZ">Юридическое лицо</label>
-								<input type="text" name="name" id="name" placeholder="Фамилия Имя Отчество">
-								<input type="text" name="email" id="email" placeholder="Email">
-								<input type="text" name="phone" id="phone" placeholder="Номер телефона">
-								<input type="text" name="city" id="city" placeholder="Город">
-								<select name="activity" id="activity">
-									<option value="Вид деятельности">Вид деятельности</option>
-									<option value="Врач дерматокосметолог">Врач дерматокосметолог</option>
-									<option value="Косметолог-эстетист">Косметолог-эстетист</option>
-									<option value="Дилер">Дилер</option>
-									<option value="Директор клиники">Директор клиники</option>
-									<option value="Сотрудник маркетинга (smm/digital)">Сотрудник маркетинга (smm/digital)</option>
-									<option value="другое">другое</option>
-								</select>
-								<div class="line">
-									<p>Принять участие в Галла ужине</p>
-									<input type="radio" name="galaEvent" id="galaYes" value="galaYes">
-									<label for="galaYes">Да</label>
-									<input type="radio" name="galaEvent" id="galaNo" value="galaNo">
-									<label for="galaNo">Нет</label>
+								<div class="tabs-wrap">
+									<ul class="tabs">
+										<li data-tab-target2="#form1" class="tab active">Физическое лицо</li>
+										<li data-tab-target2="#form2" class="tab">Юридическое лицо</li>
+									</ul>
+									<div class="tab-content">
+										<div data-tab-content2 id="form1" class="active">
+											<form action="#">
+												<input type="text" name="name" id="name" placeholder="Фамилия Имя Отчество">
+												<input type="text" name="email" id="email" placeholder="Email">
+												<input type="text" name="phone" id="phone" placeholder="Номер телефона">
+												<input type="text" name="city" id="city" placeholder="Город">
+												<select name="activity" id="activity">
+													<option value="Вид деятельности">Вид деятельности</option>
+													<option value="Врач дерматокосметолог">Врач дерматокосметолог</option>
+													<option value="Косметолог-эстетист">Косметолог-эстетист</option>
+													<option value="Дилер">Дилер</option>
+													<option value="Директор клиники">Директор клиники</option>
+													<option value="Сотрудник маркетинга (smm/digital)">Сотрудник маркетинга (smm/digital)</option>
+													<option value="другое">другое</option>
+												</select>
+												<div class="line">
+													<p>Принять участие в Галла ужине</p>
+													<input type="radio" name="galaEvent" id="galaYes" value="galaYes">
+													<label for="galaYes">Да</label>
+													<input type="radio" name="galaEvent" id="galaNo" value="galaNo">
+													<label for="galaNo">Нет</label>
+												</div>
+												<input type="button" value="Зарегистрироваться" class="btn btn-color">
+											</form>
+										</div>
+										<div data-tab-content2 id="form2">asd</div>
+									</div>
 								</div>
-								<input type="button" value="Зарегистрироваться" class="btn btn-color">
-							</form>
+							</div>
 							<div class="logo">
 								<img src="./img/logo-caamc.png" alt="CAAMC">
 							</div>

@@ -17,6 +17,23 @@ $(function() {
 		})
 	})
 
+	const tabs2 = document.querySelectorAll('[data-tab-target2]')
+	const tabContents2 = document.querySelectorAll('[data-tab-content2]')
+
+	tabs2.forEach(tab2 => {
+		tab2.addEventListener('click', () => {
+			const target = document.querySelector(tab2.dataset.tabTarget2)
+			tabContents2.forEach(tabContent2 => {
+				tabContent2.classList.remove('active')
+			})
+			tabs2.forEach(tab2 => {
+				tab2.classList.remove('active')
+			})
+			tab2.classList.add('active')
+			target.classList.add('active')
+		})
+	})
+
 	$('#menuToggleChkd').change(function(){
 		if ($(this).is(':checked')) {
 			$('nav').addClass('show');

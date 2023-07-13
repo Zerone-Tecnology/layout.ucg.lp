@@ -552,6 +552,15 @@ section
 		padding: 35px
 		position: relative
 		overflow: hidden
+		&::after
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			background-image: url('../img/bg-rectangle.png')
+			z-index: 1
 		h3
 			margin-top: 0
 		.form
@@ -560,6 +569,8 @@ section
 			color: $text
 			padding: 30px 50px
 			border-radius: 10px
+			z-index: 2
+			position: relative
 			input[type="text"],
 			input[type="email"],
 			input[type="phone"],
@@ -586,11 +597,13 @@ section
 		position: absolute
 		right: 35px
 		top: 35px
+		z-index: 2
 	.girl
 		position: absolute
 		bottom: -15px
 		right: -55px
 		width: 40%
+		z-index: 2
 		img
 			width: 90%
 	.girl-2

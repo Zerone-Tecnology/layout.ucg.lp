@@ -67,7 +67,6 @@ h1 {
   padding: 15px 25px;
   background-color: #DFA231;
   color: #fff;
-  font-weight: bold;
   transition: all 0.25s ease;
   text-align: center;
 }
@@ -80,6 +79,15 @@ h1 {
 a {
   color: #454545;
   text-decoration: none;
+}
+
+.icon-arr {
+  background-image: url("../img/icon-arr.png");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 19px;
+  display: inline-block;
+  margin: auto 0;
 }
 
 .title {
@@ -201,6 +209,7 @@ section {
 #main .blocks {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 #main .blocks .block {
   margin-bottom: 15px;
@@ -238,7 +247,7 @@ section {
   background-color: #fff;
   border-radius: 50%;
   top: 50%;
-  margin-top: -25px;
+  margin-top: -20px;
 }
 #main .timer::before {
   left: -20px;
@@ -346,6 +355,9 @@ section {
 .country.russia {
   background-position: 0 -250px;
 }
+.country.greece {
+  background-position: 0 -370px;
+}
 
 #about {
   position: relative;
@@ -390,6 +402,9 @@ section {
 #partners {
   text-align: center;
 }
+#partners .partners-items {
+  position: relative;
+}
 #partners .partners-items a {
   padding: 15px;
   display: block;
@@ -397,10 +412,51 @@ section {
 #partners .partners-items img {
   width: auto;
 }
+#partners .partners-items .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+#partners .partners-items .owl-nav .owl-prev {
+  top: -20px;
+  left: -50px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  transform: rotate(180deg);
+}
+#partners .partners-items .owl-nav .owl-prev img {
+  vertical-align: top;
+}
+#partners .partners-items .owl-nav .owl-next {
+  top: -20px;
+  right: -50px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+#partners .partners-items .owl-nav .owl-next img {
+  vertical-align: top;
+}
 
 #info {
   background: linear-gradient(268.58deg, #FFA600 -13.7%, #1D0677 100%);
   color: #fff;
+  position: relative;
+}
+#info::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg-rectangle.png");
+  z-index: 0;
+}
+#info .container {
+  z-index: 2;
+  position: relative;
 }
 #info .block {
   display: flex;
@@ -628,7 +684,11 @@ section {
   padding: 30px 50px;
   border-radius: 10px;
 }
-#form .form-wrap .form input[type=text], #form .form-wrap .form select {
+#form .form-wrap .form input[type=text],
+#form .form-wrap .form input[type=email],
+#form .form-wrap .form input[type=phone],
+#form .form-wrap .form textarea,
+#form .form-wrap .form select {
   border: 1px solid #DFE6F5;
   padding: 15px;
   border-radius: 15px;
@@ -640,7 +700,7 @@ section {
 #form .form-wrap .form select {
   width: 96%;
 }
-#form .form-wrap .form input[type=button] {
+#form .form-wrap .form input {
   font-family: "Montserrat", sans-serif;
 }
 #form .form-wrap .line {
@@ -739,6 +799,21 @@ footer .copy {
 footer .copy img {
   width: 20px;
   vertical-align: middle;
+}
+
+.bg-rec::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg-rectangle.png");
+  z-index: 1;
+}
+.bg-rec .container {
+  z-index: 2;
+  position: relative;
 }
 
 /*==========  Desktop First Method  ==========*/

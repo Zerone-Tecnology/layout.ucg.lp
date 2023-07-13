@@ -65,7 +65,6 @@ h1
 	padding: 15px 25px
 	background-color: $yellow
 	color: #fff
-	font-weight: bold
 	transition: all .25s ease
 	text-align: center
 	&:hover
@@ -75,6 +74,13 @@ h1
 a
 	color: $text
 	text-decoration: none
+.icon-arr
+	background-image: url('../img/icon-arr.png')
+	background-repeat: no-repeat
+	width: 24px
+	height: 19px
+	display: inline-block
+	margin: auto 0
 .title
 	text-transform: uppercase
 	color: $accent
@@ -173,6 +179,7 @@ section
 	.blocks
 		display: flex
 		flex-direction: column
+		justify-content: center
 		.block
 			margin-bottom: 15px
 			.bl
@@ -203,12 +210,11 @@ section
 			background-color: #fff
 			border-radius: 50%
 			top: 50%
-			margin-top: -25px
+			margin-top: -20px
 		&::before
 			left: -20px
 		&::after
 			right: -20px
-
 		.bt
 			color: #fff
 			font-size: 72px
@@ -287,13 +293,14 @@ section
 		background-position: 0 -165px
 	&.russia
 		background-position: 0 -250px
+	&.greece
+		background-position: 0 -370px
 #about
 	position: relative
 	background: #19085B
 	color: #fff
 	&::before
 		content: ''
-		// background: linear-gradient(90.5deg, #DFE6F5 5%, rgba(223, 230, 245, 0) 65.59%)
 		background: linear-gradient(274.15deg, rgba(255, 166, 0, 0) 2.41%, #AC6D21 50.48%, #19085B 99.56%)
 		position: absolute
 		left: 0
@@ -324,14 +331,49 @@ section
 #partners
 	text-align: center
 	.partners-items
+		position: relative
 		a
 			padding: 15px
 			display: block
 		img
 			width: auto
+		.owl-nav
+			position: absolute
+			top: 50%
+			width: 100%
+			.owl-prev
+				top: -20px
+				left: -50px
+				width: 40px
+				height: 40px
+				position: absolute
+				transform: rotate(180deg)
+				img
+					vertical-align: top
+			.owl-next
+				top: -20px
+				right: -50px
+				width: 40px
+				height: 40px
+				position: absolute
+				img
+					vertical-align: top
 #info
 	background: linear-gradient(268.58deg, #FFA600 -13.7%, #1D0677 100%)
 	color: #fff
+	position: relative
+	&::after
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-image: url('../img/bg-rectangle.png')
+		z-index: 0
+	.container
+		z-index: 2
+		position: relative
 	.block
 		display: flex
 		justify-content: center
@@ -515,7 +557,11 @@ section
 			color: $text
 			padding: 30px 50px
 			border-radius: 10px
-			input[type="text"], select
+			input[type="text"],
+			input[type="email"],
+			input[type="phone"],
+			textarea,
+			select
 				border: 1px solid #DFE6F5
 				padding: 15px
 				border-radius: 15px
@@ -525,7 +571,7 @@ section
 				font-size: 14px
 			select
 				width: 96%
-			input[type="button"]
+			input
 				font-family: "Montserrat", sans-serif
 		.line
 			p
@@ -605,6 +651,20 @@ footer
 		img
 			width: 20px
 			vertical-align: middle
+
+.bg-rec
+	&::after
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-image: url('../img/bg-rectangle.png')
+		z-index: 1
+	.container
+		z-index: 2
+		position: relative
 
 //ALWAYS END
 @import "media"

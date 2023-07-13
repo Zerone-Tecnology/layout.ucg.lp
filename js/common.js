@@ -55,12 +55,17 @@ $(function() {
 		$('.partners-items').owlCarousel({
 			items: 4,
 			dots: false,
+			nav: true,
+			navText: ["<img src='./img/icon-arr-big.png'>","<img src='./img/icon-arr-big.png'>"],
 			responsive: {
 				0:{
 					items: 2
 				},
-				1280:{
+				992:{
 					items: 3
+				},
+				1280:{
+					items: 4
 				}			
 			}
 		});
@@ -161,24 +166,6 @@ $(function() {
 			return $(this).attr("src").replace(".svg", ".png");
 		});
 	};
-
-	//E-mail Ajax Send
-	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
 
 	//Chrome Smooth Scroll
 	try {

@@ -211,6 +211,9 @@ section {
   flex-direction: column;
   justify-content: center;
 }
+#main .blocks.b2 {
+  height: 100%;
+}
 #main .blocks .block {
   margin-bottom: 15px;
 }
@@ -473,14 +476,15 @@ section {
   justify-content: end;
 }
 #programm .tab {
-  padding: 25px;
+  padding: 25px 55px;
   background-color: #DFE6F5;
-  border-radius: 45px;
+  border-radius: 15em;
   text-align: center;
   margin-left: 15px;
 }
 #programm .tab.active {
   background: #DFA231;
+  color: #fff;
 }
 #programm .btn-download {
   background: transparent;

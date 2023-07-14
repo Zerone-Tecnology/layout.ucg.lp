@@ -68,7 +68,7 @@ h4 {
 .btn {
   display: block;
   border-radius: 4px;
-  padding: 15px 25px;
+  padding: 5px 25px;
   background-color: #DFA231;
   color: #fff;
   transition: all 0.25s ease;
@@ -99,7 +99,7 @@ a {
   color: #1A1042;
   display: inline-block;
   padding-bottom: 25px;
-  font-size: 44px;
+  font-size: 40px;
   line-height: 1.2em;
   font-weight: 600;
 }
@@ -112,7 +112,7 @@ a {
 }
 
 header {
-  padding: 25px 0;
+  padding: 5px 0;
   background-color: #fff;
 }
 header .logo img {
@@ -121,6 +121,8 @@ header .logo img {
 header nav ul {
   display: flex;
   align-items: stretch;
+  justify-content: flex-end;
+  margin: 5px 0 0;
 }
 header nav ul li {
   list-style-type: none;
@@ -185,7 +187,7 @@ header .mainMenu a {
 }
 
 section {
-  padding: 50px 0;
+  padding: 40px 0;
   background-color: #fff;
 }
 
@@ -195,7 +197,7 @@ section {
 }
 #video-slider #background-video {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   -o-object-fit: cover;
      object-fit: cover;
   left: 0;
@@ -240,7 +242,7 @@ section {
 }
 #main .timer {
   background: linear-gradient(268.58deg, #FFA600 -13.7%, #1D0677 100%);
-  height: 150px;
+  height: 110px;
   width: 100%;
   border-radius: 10px;
   display: flex;
@@ -265,7 +267,7 @@ section {
 }
 #main .timer .bt {
   color: #fff;
-  font-size: 72px;
+  font-size: 60px;
   flex: 1;
   text-align: center;
   position: relative;
@@ -301,6 +303,9 @@ section {
   padding: 15px;
   position: relative;
 }
+#speakers .blocks .block:hover .img img {
+  transform: scale(1.1);
+}
 #speakers .blocks .block .img {
   text-align: center;
   border-radius: 24px;
@@ -312,6 +317,7 @@ section {
   height: 100%;
   margin-bottom: -10px;
   margin-top: 25px;
+  transition: all 0.25s ease;
 }
 #speakers .blocks .block .name {
   font-size: 24px;
@@ -371,6 +377,7 @@ section {
   position: relative;
   background: #19085B;
   color: #fff;
+  overflow: hidden;
 }
 #about::before {
   content: "";
@@ -392,9 +399,10 @@ section {
   background: url("../img/about_bg.jpg");
   background-repeat: no-repeat;
   background-position: 100% 0;
+  background-size: cover;
 }
 #about .title {
-  margin-bottom: 0;
+  margin: 0;
   padding-bottom: 0;
   color: #fff;
 }
@@ -418,7 +426,7 @@ section {
   display: block;
 }
 #partners .partners-items img {
-  width: auto;
+  width: 100%;
 }
 #partners .partners-items .owl-nav {
   position: absolute;
@@ -448,7 +456,7 @@ section {
 }
 
 #info {
-  background: linear-gradient(268.58deg, #FFA600 -13.7%, #1D0677 100%);
+  background: linear-gradient(268.58deg, #1D0677 -13.7%, #FFA600 100%);
   color: #fff;
   position: relative;
 }
@@ -472,8 +480,22 @@ section {
   height: 100%;
   align-items: center;
 }
+#info .img {
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
 #info .img img {
   width: 100%;
+}
+#info .row {
+  display: flex;
+  height: 100%;
+  vertical-align: middle;
+}
+#info [class^=col] {
+  display: flex;
+  vertical-align: middle;
 }
 
 #programm .tabs-wrap {
@@ -487,7 +509,7 @@ section {
   justify-content: end;
 }
 #programm .tab {
-  padding: 25px 55px;
+  padding: 15px 55px;
   background-color: #DFE6F5;
   border-radius: 15em;
   text-align: center;
@@ -499,7 +521,9 @@ section {
 }
 #programm .btn-download {
   background: transparent;
-  color: #7A859D;
+  color: #fff;
+  display: inline-block;
+  background-color: #1A1042;
   font-size: 14px;
   font-weight: 400;
   margin-top: 25px;
@@ -569,7 +593,7 @@ section {
 }
 .tab-content .list .name {
   font-weight: 600;
-  font-size: 28px;
+  font-size: 24px;
   position: relative;
 }
 .tab-content .list .country {
@@ -580,11 +604,15 @@ section {
   left: 0;
   padding-left: 0;
 }
-.tab-content .list .left, .tab-content .list .center {
+.tab-content .list .left {
+  width: 20%;
+}
+.tab-content .list .center {
   width: 20%;
 }
 .tab-content .list .right {
-  width: 80%;
+  width: 50%;
+  padding-left: 10%;
 }
 .tab-content .list.accent {
   background: linear-gradient(268.58deg, #FFA600 -13.7%, #1D0F59 100%);
@@ -593,15 +621,21 @@ section {
 .tab-content .list.accent .left {
   display: flex;
   align-items: center;
+  width: auto;
+}
+.tab-content .list.accent .center {
+  display: none;
+}
+.tab-content .list.accent .right {
+  padding-left: 2%;
+  text-align: center;
+  width: 70%;
 }
 .tab-content .list.accent .time {
   margin-bottom: 0;
 }
 .tab-content .list.accent .name {
   color: #fff;
-}
-.tab-content .list.accent .center {
-  display: none;
 }
 
 #advantages {
@@ -613,9 +647,10 @@ section {
 #advantages .advantages-items {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 #advantages .item {
-  width: 29%;
+  width: calc(33.3333333333% - 10px);
   text-align: center;
   padding: 15px;
   background-color: #F0F0F0;
@@ -658,8 +693,6 @@ section {
   text-align: left;
 }
 #lasttime .gallery-items .images {
-  overflow: hidden;
-  display: inline-block;
   padding: 5px;
 }
 #lasttime .gallery-items .images img {
@@ -859,6 +892,97 @@ footer .copy img {
   position: relative;
 }
 
+.cback {
+  width: 160px;
+  height: 160px;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 99;
+}
+
+.cback-circle {
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 50% 50%;
+}
+
+.cback-circle--phone {
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cback-circle.fn1 {
+  animation: pin 2.5s linear 0.4s infinite normal;
+}
+.cback-circle.fn2 {
+  animation: pin 2s linear 0s infinite normal;
+  background: none;
+}
+
+.cback:hover .cback-circle--phone {
+  animation: hvr-phone 1.5s linear infinite normal;
+}
+.cback .phone-icon {
+  width: 41px;
+  height: 41px;
+  background: url(https://brrenat.github.io/content/phone.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: phone-fn 2s infinite ease-in-out;
+}
+@keyframes phone-fn {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1) skew(1deg);
+  }
+  10% {
+    transform: translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    transform: translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    transform: translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    transform: translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
+  }
+  100%, 50% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1) skew(1deg);
+  }
+}
+@keyframes pin {
+  0% {
+    opacity: 0.6;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes hvr-phone {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: inset 0 0 20px -14px rgba(0, 0, 0, 0.75);
+  }
+  80% {
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: inset 0 0 20px -4px rgba(0, 0, 0, 0.75);
+  }
+}
 /*==========  Desktop First Method  ==========*/
 @media only screen and (max-width: 1440px) {
   .title {
@@ -872,6 +996,12 @@ footer .copy img {
 @media only screen and (max-width: 1200px) {
   #form .girl {
     width: 30%;
+  }
+  #about::before {
+    width: 90%;
+  }
+  #about::after {
+    width: 70%;
   }
   #programm .tabs-wrap {
     margin-top: 0;

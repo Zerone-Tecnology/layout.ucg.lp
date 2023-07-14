@@ -54,6 +54,9 @@ $(function() {
 
 		$('.partners-items').owlCarousel({
 			items: 4,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			loop: true,
 			dots: false,
 			nav: true,
 			navText: ["<img src='./img/icon-arr-big.png'>","<img src='./img/icon-arr-big.png'>"],
@@ -149,7 +152,7 @@ $(function() {
 		items: 5,
 		autoplayTimeout: 1000,
 		loop: true,
-		stagePadding: -100,
+		stagePadding: 100,
 		responsive: {
 			0:{
 				items: 3
@@ -159,6 +162,7 @@ $(function() {
 			}		
 		},
 		autoplay: true,
+		rtl: false,
 		dots: false
 	});
 

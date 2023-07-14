@@ -28,7 +28,7 @@ html.js .loader .loader_inner {
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   min-width: 320px;
   position: relative;
   line-height: 1.6;
@@ -50,7 +50,7 @@ body textarea:required:valid {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 54px;
 }
 
 h4 {
@@ -99,7 +99,7 @@ a {
   color: #1A1042;
   display: inline-block;
   padding-bottom: 25px;
-  font-size: 50px;
+  font-size: 44px;
   line-height: 1.2em;
   font-weight: 600;
 }
@@ -296,7 +296,7 @@ section {
   flex-wrap: wrap;
 }
 #speakers .blocks .block {
-  width: 30%;
+  width: 33.3333333333%;
   text-align: left;
   padding: 15px;
   position: relative;

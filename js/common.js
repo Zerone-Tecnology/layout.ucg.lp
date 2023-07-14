@@ -1,5 +1,15 @@
 $(function() {
 
+
+	$(".popup").magnificPopup({
+    type: "image",
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: true,
+    gallery: {
+      enabled: true
+    }
+  });
 	const tabs = document.querySelectorAll('[data-tab-target]')
 	const tabContents = document.querySelectorAll('[data-tab-content]')
 

@@ -936,7 +936,8 @@ footer .copy img {
 .cback .phone-icon {
   width: 41px;
   height: 41px;
-  background: url(https://brrenat.github.io/content/phone.png);
+  background: url("../img/icon-wa.png");
+  background-size: cover;
   position: absolute;
   top: 50%;
   left: 50%;

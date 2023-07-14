@@ -59,10 +59,12 @@ $(function() {
 			navText: ["<img src='./img/icon-arr-big.png'>","<img src='./img/icon-arr-big.png'>"],
 			responsive: {
 				0:{
-					items: 2
+					items: 2,
+					nav: false,
 				},
 				992:{
-					items: 3
+					items: 3,
+					nav: false,
 				},
 				1280:{
 					items: 4

@@ -578,7 +578,7 @@ section {
 }
 .tab-content .list.accent {
   background: linear-gradient(268.58deg, #FFA600 -13.7%, #1D0F59 100%);
-  padding: 0;
+  padding: 0 15px;
 }
 .tab-content .list.accent .left {
   display: flex;
@@ -866,6 +866,11 @@ footer .copy img {
   #programm .tabs-wrap {
     margin-top: 0;
   }
+  .tab-content .list .img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -884,6 +889,9 @@ footer .copy img {
   #programm .tab-content .list .time {
     padding: 0 10px;
     font-size: 14px;
+  }
+  #info .img img {
+    width: 100%;
   }
   #partners .partners-items a {
     width: 40%;
@@ -953,6 +961,9 @@ footer .copy img {
   }
   #info {
     text-align: center;
+  }
+  #info .img img {
+    width: auto;
   }
   #programm .tab-content .list {
     flex-wrap: wrap;

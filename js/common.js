@@ -1,6 +1,5 @@
 $(function() {
 
-
 	$(".popup").magnificPopup({
     type: "image",
     removalDelay: 160,
@@ -145,17 +144,23 @@ $(function() {
 		autoplayTimeout: 1000,
 		loop: true,
 		stagePadding: 100,
+		autoplay: true,
+		rtl: true,
+		dots: false,
 		responsive: {
 			0:{
+				items: 1
+			},
+			480:{
+				items: 2
+			},
+			992:{
 				items: 3
 			},
 			1280:{
 				items: 4
-			}		
-		},
-		autoplay: true,
-		rtl: true,
-		dots: false
+			}
+		}
 	});
 
 	$('.gallery-items-second').owlCarousel({
@@ -165,11 +170,17 @@ $(function() {
 		stagePadding: 100,
 		responsive: {
 			0:{
+				items: 1
+			},
+			480:{
+				items: 2
+			},
+			992:{
 				items: 3
 			},
 			1280:{
 				items: 4
-			}		
+			}
 		},
 		autoplay: true,
 		rtl: false,

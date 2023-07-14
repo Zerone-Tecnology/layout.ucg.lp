@@ -93,19 +93,23 @@
 		.bt
 			font-size: 42px
 	#speakers .blocks .block
-		width: 39%
+		width: calc(100% / 2)
 	#about
 		&::after, &::before
 			content: none
 	#info
 		text-align: center
+		.row
+			display: block
+		[class^=col]
+			display: block
 		.img img
 			width: auto
 	#programm .tab-content 
 		.list
 			flex-wrap: wrap
 			.left, .center
-				width: 40%
+				width: 50%
 			.right
 				width: 100%
 			.topic
@@ -116,7 +120,7 @@
 					.time
 						padding: 0 10px
 						margin-bottom: 0
-						margin-top: 5px
+						margin-top: 0
 				.right
 					width: 60%
 				.name
@@ -172,8 +176,11 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	.container, .container-fluid
-		width: auto
+	.title
+		font-size: 30px
+	header
+		.btn
+			margin-top: 15px
 	#main .timer .bt
 		font-size: 25px
 		span
@@ -192,19 +199,22 @@
 		.tab
 			padding: 15px
 			font-size: 16px
-			width: 40%
 			margin-left: 0
 		.tab-content .list.accent 
 			.left
-				width: 33%
+				width: 45%
 				padding-right: 0
 			.right
 				font-size: 14px
 				width: 50%
 				line-height: 1.2em	
+		.btn-download
+			display: block
 	footer .copy
 		font-size: 12px
 		margin-top: 25px
+	.cback
+		display: none
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

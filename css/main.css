@@ -53,6 +53,10 @@ h1 {
   font-size: 56px;
 }
 
+h4 {
+  font-weight: 600;
+}
+
 .hidden {
   display: none;
 }
@@ -550,6 +554,9 @@ section {
   padding: 0 15px;
   color: #fff;
 }
+.tab-content .list .topic {
+  font-weight: 500;
+}
 .tab-content .list .img {
   background-color: #fff;
   border-radius: 15px;
@@ -722,7 +729,7 @@ section {
 #form .form-wrap .form select {
   border: 1px solid #DFE6F5;
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 5px;
   width: 90%;
   margin: 10px 0;
   font-family: "Montserrat", sans-serif;

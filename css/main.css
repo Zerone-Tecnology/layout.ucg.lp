@@ -314,7 +314,7 @@ section {
   margin-top: 25px;
 }
 #speakers .blocks .block .name {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   color: #1A1042;
   margin-bottom: 0;
@@ -471,6 +471,9 @@ section {
   justify-content: center;
   height: 100%;
   align-items: center;
+}
+#info .img img {
+  width: 100%;
 }
 
 #programm .tabs-wrap {

@@ -885,6 +885,9 @@ section {
   top: 35px;
   z-index: 2;
 }
+#form .logo p {
+  font-size: 2em;
+}
 #form .girl {
   position: absolute;
   bottom: -15px;
@@ -896,7 +899,7 @@ section {
   width: 90%;
 }
 #form .girl-2 {
-  right: 10%;
+  right: 7%;
 }
 
 footer {
@@ -989,7 +992,7 @@ footer .copy img {
   width: 160px;
   height: 160px;
   position: fixed;
-  bottom: 10%;
+  bottom: 0;
   right: 0;
   transform: translate(-50%, -50%);
   cursor: pointer;
@@ -1091,11 +1094,15 @@ footer .copy img {
   #form .girl {
     width: 30%;
   }
-  #about::before {
-    width: 90%;
+  #form .girl-2 {
+    right: 5%;
   }
   #about::after {
     width: 70%;
+    left: 30%;
+  }
+  #about::before {
+    width: 60%;
   }
   #programm .tabs-wrap {
     margin-top: 0;
@@ -1104,6 +1111,21 @@ footer .copy img {
     height: 100%;
     display: flex;
     align-items: center;
+  }
+  #form .logo {
+    width: 200px;
+  }
+  #form .logo img {
+    width: 100%;
+  }
+  #form .logo p {
+    line-height: 1.2em;
+  }
+  #form .girl-2 {
+    display: none;
+  }
+  #form .girl-1 {
+    width: 44%;
   }
 }
 /* Medium Devices, Desktops */
@@ -1117,14 +1139,18 @@ footer .copy img {
   header nav {
     display: none;
   }
+  #about::after {
+    width: 80%;
+    left: 20%;
+  }
+  #about::before {
+    background: linear-gradient(274.15deg, rgba(255, 166, 0, 0) 2.41%, #AC6D21 70%, #19085B 99.56%);
+  }
   #main .b2 {
     height: auto;
   }
   #main .timer {
     margin-top: 0;
-  }
-  #speakers .blocks .block {
-    width: 44%;
   }
   #programm .tab-content .list .time {
     padding: 0 10px;
@@ -1142,7 +1168,7 @@ footer .copy img {
     padding: 15px 0;
   }
   #advantages .item {
-    width: 42%;
+    width: calc(50% - 10px);
   }
   .tab-content .list.accent .name {
     font-size: 22px;
@@ -1253,7 +1279,7 @@ footer .copy img {
     width: auto;
   }
   #advantages .advantages-items .item {
-    width: 95%;
+    width: 100%;
     margin: 50px 0 0 0;
   }
   #advantages .advantages-items .item .icon img {

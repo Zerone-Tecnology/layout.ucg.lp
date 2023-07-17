@@ -9,19 +9,34 @@
 	
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	#form .girl
-		width: 30%
-	#about::before
-		width: 90%
-	#about::after
-		width: 70%
+	#form 
+		.girl
+			width: 30%
+		.girl-2
+			right: 5%
+	#about
+		&::after
+			width: 70%
+			left: 30%
+		&::before
+			width: 60%
 	#programm .tabs-wrap
 		margin-top: 0
 	.tab-content .list .img
 		height: 100%
 		display: flex
 		align-items: center
-
+	#form 
+		.logo
+			width: 200px
+			img
+				width: 100%
+			p
+				line-height: 1.2em
+		.girl-2
+			display: none
+		.girl-1
+			width: 44%
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -32,13 +47,17 @@
 			display: block
 		nav
 			display: none	
+	#about
+		&::after
+			width: 80%
+			left: 20%
+		&::before
+			background: linear-gradient(274.15deg, rgba(255, 166, 0, 0) 2.41%, #AC6D21 70%, #19085B 99.56%)
 	#main 
 		.b2
 			height: auto
 		.timer
 			margin-top: 0
-	#speakers .blocks .block
-		width: 44%
 	#programm .tab-content .list .time
 		padding: 0 10px
 		font-size: 14px
@@ -53,7 +72,7 @@
 				width: 40%
 				padding: 15px 0
 	#advantages .item
-		width: 42%
+		width: calc(100% /2 - 10px)
 	.tab-content .list.accent .name
 		font-size: 22px
 
@@ -148,7 +167,7 @@
 			width: auto
 		.advantages-items
 			.item
-				width: 95%
+				width: 100%
 				margin: 50px 0 0 0
 				.icon img
 					width: 70%

@@ -229,12 +229,15 @@ section
 	color: $accent
 	.title
 		margin-top: 0
+	.b2
+		height: 110px
+		display: flex
+		vertical-align: middle
+		margin-top: 25px
 	.blocks
 		display: flex
 		flex-direction: column
 		justify-content: center
-		&.b2
-			height: 100%
 		.block
 			margin-bottom: 15px
 			.bl
@@ -327,6 +330,43 @@ section
 				font-weight: 600
 			.desc
 				font-size: 16px
+	.btn-mobile
+		display: none
+		border-radius: 5px
+		background-color: #EBEBEB
+		color: $accent
+		padding: 0 15px
+.blockMobile
+	background-color: #fff
+	padding: 15px
+	border-radius: 15px
+	width: 90%
+	margin: 0 auto
+	position: relative
+	.img
+		text-align: center
+		border-radius: 24px
+		background: linear-gradient(289.9deg, #DBD6EF -5.47%, rgba(241, 241, 241, 0) 112.91%)
+		overflow: hidden
+		position: relative
+		img
+			height: 100%
+			margin-bottom: -10px
+			margin-top: 25px
+			transition: all .25s ease
+	.name
+		font-size: 24px
+		font-weight: bold
+		color: $accent
+		margin-bottom: 0
+	.category
+		color: $gold
+		text-transform: uppercase
+		margin-top: 0
+		font-weight: 600
+	.desc
+		font-size: 16px
+
 .country
 	background-image: url('../img/flags.png')
 	background-repeat: no-repeat
@@ -631,8 +671,8 @@ section
 				&::before
 					content: ''
 					position: absolute
-					width: 12px
-					height: 12px
+					width: 8px
+					height: 8px
 					left: 4px
 					top: 9px
 					border-radius: 50%
@@ -656,7 +696,7 @@ section
 			margin-top: 0
 		.form
 			background: #fff
-			width: 450px
+			width: 550px
 			color: $text
 			padding: 30px 50px
 			border-radius: 10px
@@ -668,14 +708,12 @@ section
 			textarea,
 			select
 				border: 1px solid #DFE6F5
-				padding: 15px
+				padding: 10px
 				border-radius: 5px
 				width: 90%
-				margin: 10px 0
+				margin: 0 0 10px
 				font-family: "Montserrat", sans-serif
 				font-size: 14px
-			select
-				width: 96%
 			input
 				font-family: "Montserrat", sans-serif
 		.line

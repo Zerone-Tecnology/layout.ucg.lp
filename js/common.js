@@ -1,5 +1,10 @@
 $(function() {
 
+	$('.popup-modal').magnificPopup({
+		type: 'inline',
+		preloader: false
+	});
+
 	$(".popup").magnificPopup({
     type: "image",
     removalDelay: 160,
@@ -92,14 +97,7 @@ $(function() {
 			items: 1,
 			loop: true,
 			dots: false,
-			responsive: {
-				0:{
-					stagePadding: 50,
-				},
-				480:{
-					stagePadding: 10,
-				}	
-			}
+			stagePadding: 10,
 		});
 	}
 

@@ -41,12 +41,12 @@
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-9 col-md-2">
+				<div class="col-xs-9 col-sm-4 col-md-2">
 					<div class="logo">
 						<img src="./img/ucg-logo.png" alt="UCG">
 					</div>
 				</div>
-				<div class="col-xs-3 col-md-7">
+				<div class="col-xs-3 col-sm-4 col-md-7">
 					<div class="mainMenu">
 						<div id="menuToggle">
 							<input type="checkbox" id="menuToggleChkd"/>
@@ -64,7 +64,7 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="col-xs-12 col-md-3">
+				<div class="col-xs-12 col-sm-4 col-md-3">
 					<a href="#form" class="btn btn-color">Регистрация <div class="icon-arr"></div></a>
 				</div>
 			</div>
@@ -98,8 +98,10 @@
 								Приглашаем вас посетить конгресс и получить новые знания и опыт от международных специалистов вместе с Aesthetics Group.
 							</p>
 						</div>
-						<div class="col-md-4">
-							<div class="blocks b2">
+					</div>
+					<div class="row">
+						<div class="col-md-4 b2">
+							<div class="blocks">
 								<div class="block">
 									<div class="bl long"><img src="./img/icon-time.png" alt="Time"> До конгресса осталось</div>
 								</div>
@@ -123,6 +125,16 @@
 							<h2 class="title">спикеры конгресса</h2>
 							<div class="blocks">
 								<div class="block">
+									<div class="img">
+										<div class="country morocco">Марроко</div>
+										<img src="./img/speakers/Nabila-Azib.png" alt="Nasiba Azib">
+									</div>
+									<p class="name">Dr. Nabila Azib</p>
+									<p class="category">Teoxane</p>
+									<a class="btn-mobile popup-modal" href="#speaker1">Подробнее</a>
+									<p class="desc">Пластический хирург, международный тренер Teoxane</p>
+								</div>
+								<div class="blockMobile mfp-hide" id="speaker1">
 									<div class="img">
 										<div class="country morocco">Марроко</div>
 										<img src="./img/speakers/Nabila-Azib.png" alt="Nasiba Azib">
@@ -231,17 +243,17 @@
 					<div class="col-md-12">
 						<h2 class="title">Наши спонсоры и партнеры</h2>
 						<div class="partners-items">
-							<a href="#"><img src="./img/partners/Logo-aespilla.png" alt="aespilla"></a>
-							<a href="#"><img src="./img/partners/Logo-Biorepeel.png" alt="Biorepeel"></a>
-							<a href="#"><img src="./img/partners/Logo-Genwol.png" alt="Genwol"></a>
-							<a href="#"><img src="./img/partners/Logo-Gouri.png" alt="Gouri"></a>
-							<a href="#"><img src="./img/partners/Logo-KARISMA.png" alt="KARISMA"></a>
-							<a href="#"><img src="./img/partners/Logo-laenek.png" alt="laenek"></a>
-							<a href="#"><img src="./img/partners/Logo-Mansard.png" alt="Mansard"></a>
-							<a href="#"><img src="./img/partners/Logo-Newsha.png" alt="Newsha"></a>
-							<a href="#"><img src="./img/partners/Logo-Payot.png" alt="Payot"></a>
-							<a href="#"><img src="./img/partners/Logo-Regenial.png" alt="Regenial"></a>
-							<a href="#"><img src="./img/partners/Logo-Teoxane.png" alt="Teoxane"></a>
+							<img src="./img/partners/Logo-aespilla.png" alt="aespilla">
+							<img src="./img/partners/Logo-Biorepeel.png" alt="Biorepeel">
+							<img src="./img/partners/Logo-Genwol.png" alt="Genwol">
+							<img src="./img/partners/Logo-Gouri.png" alt="Gouri">
+							<img src="./img/partners/Logo-KARISMA.png" alt="KARISMA">
+							<img src="./img/partners/Logo-laenek.png" alt="laenek">
+							<img src="./img/partners/Logo-Mansard.png" alt="Mansard">
+							<img src="./img/partners/Logo-Newsha.png" alt="Newsha">
+							<img src="./img/partners/Logo-Payot.png" alt="Payot">
+							<img src="./img/partners/Logo-Regenial.png" alt="Regenial">
+							<img src="./img/partners/Logo-Teoxane.png" alt="Teoxane">
 						</div>
 					</div>
 				</div>
@@ -533,12 +545,20 @@
 													<option value="Сотрудник маркетинга (smm/digital)">Сотрудник маркетинга (smm/digital)</option>
 													<option value="другое">другое</option>
 												</select>
+												<input type="text" name="work" id="work" placeholder="Место работы">
 												<div class="line">
 													<p>Принять участие в Галла ужине</p>
 													<input type="radio" name="galaEvent" id="galaYes" value="galaYes">
 													<label for="galaYes">Да</label>
 													<input type="radio" name="galaEvent" id="galaNo" value="galaNo">
 													<label for="galaNo">Нет</label>
+												</div>
+												<div class="line">
+													<p>Способы оплаты</p>
+													<input type="radio" name="payType" id="cash" value="cash">
+													<label for="cash">Наличными</label>
+													<input type="radio" name="payType" id="kaspi" value="kaspi">
+													<label for="kaspi">Kaspi</label>
 												</div>
 												<input type="button" value="Зарегистрироваться" class="btn btn-color">
 											</form>

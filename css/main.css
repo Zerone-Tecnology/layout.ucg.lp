@@ -262,13 +262,16 @@ section {
 #main .title {
   margin-top: 0;
 }
+#main .b2 {
+  height: 110px;
+  display: flex;
+  vertical-align: middle;
+  margin-top: 25px;
+}
 #main .blocks {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-#main .blocks.b2 {
-  height: 100%;
 }
 #main .blocks .block {
   margin-bottom: 15px;
@@ -381,6 +384,50 @@ section {
   font-weight: 600;
 }
 #speakers .blocks .block .desc {
+  font-size: 16px;
+}
+#speakers .btn-mobile {
+  display: none;
+  border-radius: 5px;
+  background-color: #EBEBEB;
+  color: #1A1042;
+  padding: 0 15px;
+}
+
+.blockMobile {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+.blockMobile .img {
+  text-align: center;
+  border-radius: 24px;
+  background: linear-gradient(289.9deg, #DBD6EF -5.47%, rgba(241, 241, 241, 0) 112.91%);
+  overflow: hidden;
+  position: relative;
+}
+.blockMobile .img img {
+  height: 100%;
+  margin-bottom: -10px;
+  margin-top: 25px;
+  transition: all 0.25s ease;
+}
+.blockMobile .name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1A1042;
+  margin-bottom: 0;
+}
+.blockMobile .category {
+  color: #B17427;
+  text-transform: uppercase;
+  margin-top: 0;
+  font-weight: 600;
+}
+.blockMobile .desc {
   font-size: 16px;
 }
 
@@ -771,8 +818,8 @@ section {
 #form .tabs .tab.active::before {
   content: "";
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   left: 4px;
   top: 9px;
   border-radius: 50%;
@@ -800,7 +847,7 @@ section {
 }
 #form .form-wrap .form {
   background: #fff;
-  width: 450px;
+  width: 550px;
   color: #454545;
   padding: 30px 50px;
   border-radius: 10px;
@@ -813,15 +860,12 @@ section {
 #form .form-wrap .form textarea,
 #form .form-wrap .form select {
   border: 1px solid #DFE6F5;
-  padding: 15px;
+  padding: 10px;
   border-radius: 5px;
   width: 90%;
-  margin: 10px 0;
+  margin: 0 0 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-}
-#form .form-wrap .form select {
-  width: 96%;
 }
 #form .form-wrap .form input {
   font-family: "Montserrat", sans-serif;
@@ -1073,6 +1117,12 @@ footer .copy img {
   header nav {
     display: none;
   }
+  #main .b2 {
+    height: auto;
+  }
+  #main .timer {
+    margin-top: 0;
+  }
   #speakers .blocks .block {
     width: 44%;
   }
@@ -1088,7 +1138,8 @@ footer .copy img {
     display: inline-block;
   }
   #partners .partners-items img {
-    width: 100%;
+    width: 40%;
+    padding: 15px 0;
   }
   #advantages .item {
     width: 42%;
@@ -1135,6 +1186,9 @@ footer .copy img {
     margin-bottom: 5px;
     border-radius: 5px;
   }
+  header .btn {
+    margin-top: 25px;
+  }
   #main .timer {
     height: auto;
     padding: 15px 0;
@@ -1146,8 +1200,16 @@ footer .copy img {
   #speakers .blocks .block {
     width: 50%;
   }
-  #about::after, #about::before {
-    content: none;
+  #about::after {
+    background-image: url("../img/ucg-logo-bg.png");
+    background-repeat: no-repeat;
+    width: 50%;
+    background-size: contain;
+    z-index: 2;
+  }
+  #about::before {
+    background: linear-gradient(268.58deg, #FFA600 -13.7%, #1D0F59 100%);
+    width: 100%;
   }
   #info {
     text-align: center;
@@ -1174,7 +1236,7 @@ footer .copy img {
     font-size: 16px;
   }
   #programm .tab-content .list.accent .left {
-    width: 20%;
+    width: 40%;
   }
   #programm .tab-content .list.accent .left .time {
     padding: 0 10px;
@@ -1191,7 +1253,7 @@ footer .copy img {
     width: auto;
   }
   #advantages .advantages-items .item {
-    width: 90%;
+    width: 95%;
     margin: 50px 0 0 0;
   }
   #advantages .advantages-items .item .icon img {
@@ -1201,6 +1263,20 @@ footer .copy img {
     display: none;
   }
   #form .form-wrap {
+    padding: 0;
+    background: transparent;
+  }
+  #form .form-wrap .form {
+    width: 100%;
+  }
+  #form .form-wrap .form input[type=text],
+  #form .form-wrap .form input[type=email],
+  #form .form-wrap .form input[type=phone],
+  #form .form-wrap .form textarea,
+  #form .form-wrap .form select {
+    width: 100%;
+  }
+  #form .form-wrap form {
     padding: 0;
   }
   footer {
@@ -1232,23 +1308,23 @@ footer .copy img {
   .title {
     font-size: 30px;
   }
-  header .btn {
-    margin-top: 15px;
-  }
   #main .timer .bt {
     font-size: 25px;
   }
   #main .timer .bt span {
     margin-top: 0;
   }
+  #speakers .btn-mobile {
+    display: inline-block;
+  }
+  #speakers .blocks .block .desc {
+    display: none;
+  }
   #partners .partners-items a {
     padding: 15px 10px;
   }
   #advantages .advantages-items .owl-stage {
     left: -10px;
-  }
-  #advantages .advantages-items .item {
-    width: 80%;
   }
   #programm .tabs {
     justify-content: space-evenly;
@@ -1259,7 +1335,7 @@ footer .copy img {
     margin-left: 0;
   }
   #programm .tab-content .list.accent .left {
-    width: 45%;
+    width: 50%;
     padding-right: 0;
   }
   #programm .tab-content .list.accent .right {
@@ -1269,6 +1345,9 @@ footer .copy img {
   }
   #programm .btn-download {
     display: block;
+  }
+  #form .form-wrap .form {
+    padding: 15px;
   }
   footer .copy {
     font-size: 12px;
@@ -1287,21 +1366,22 @@ footer .copy img {
     flex-wrap: wrap;
   }
   #programm .tab-content .list .left {
-    width: 40%;
     font-size: 12px;
   }
   #programm .tab-content .list .center {
-    width: 30%;
     vertical-align: middle;
   }
   #programm .tab-content .list .center .img {
     padding: 15px 0;
   }
+  #programm .tab-content .list .topic {
+    font-size: 14px;
+  }
   #programm .tab-content .list .name {
     font-size: 22px;
   }
   #speakers .blocks .block {
-    width: 44%;
+    width: 50%;
     padding-right: 0;
   }
   #speakers .blocks .block .name {
@@ -1313,12 +1393,39 @@ footer .copy img {
   #speakers .blocks .block .img img {
     width: 100%;
     height: auto;
+    margin-top: 40px;
   }
-  #form .form-wrap form {
-    padding: 15px;
+  #speakers .country {
+    top: 5px;
+    background-size: 60%;
+    padding-left: 30px;
   }
-  #form .form-wrap form input[type=text], #form .form-wrap form select {
-    width: 55%;
+  #speakers .country.turkey {
+    background-position: 0 0;
+  }
+  #speakers .country.ukraine {
+    background-position: 0 -30px;
+  }
+  #speakers .country.morocco {
+    background-position: 0 -75px;
+  }
+  #speakers .country.qazaqstan {
+    background-position: 0 -110px;
+  }
+  #speakers .country.australia {
+    background-position: 0 -180px;
+  }
+  #speakers .country.singapore {
+    background-position: 0 -320px;
+  }
+  #speakers .country.italy {
+    background-position: 0 -145px;
+  }
+  #speakers .country.russia {
+    background-position: 0 -215px;
+  }
+  #speakers .country.greece {
+    background-position: 0 -360px;
   }
 }
 /*==========  Mobile First Method  ==========*/

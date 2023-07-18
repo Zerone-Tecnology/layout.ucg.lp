@@ -886,7 +886,15 @@ section {
   z-index: 2;
 }
 #form .logo p {
-  font-size: 2em;
+  font-size: 80px;
+  font-weight: 600;
+  margin: 25px 0 0;
+  line-height: 0.7em;
+  text-align: right;
+}
+#form .logo p span {
+  display: block;
+  font-size: 40px;
 }
 #form .girl {
   position: absolute;
@@ -1104,6 +1112,9 @@ footer .copy img {
   #about::before {
     width: 60%;
   }
+  #partners .partners-items img {
+    width: calc(33.3333333333% - 10px);
+  }
   #programm .tabs-wrap {
     margin-top: 0;
   }
@@ -1115,11 +1126,11 @@ footer .copy img {
   #form .logo {
     width: 200px;
   }
+  #form .logo p {
+    margin-top: 45px;
+  }
   #form .logo img {
     width: 100%;
-  }
-  #form .logo p {
-    line-height: 1.2em;
   }
   #form .girl-2 {
     display: none;

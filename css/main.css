@@ -247,8 +247,7 @@ section {
 #video-slider #background-video {
   width: 100vw;
   height: 80vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   left: 0;
   right: 0;
   top: 0;
@@ -910,6 +909,103 @@ section {
   right: 7%;
 }
 
+#post-course {
+  padding: 0;
+  position: relative;
+}
+#post-course .container {
+  background: linear-gradient(90deg, #5D3d32, #3a2537);
+  min-height: 500px;
+  height: min-content;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  display: flex;
+}
+#post-course .container p {
+  color: white;
+}
+
+.info-course {
+  width: 100%;
+  float: right;
+  position: relative;
+  height: 100%;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+.info-course h2 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.preview-spec {
+  width: 100%;
+  float: left;
+  position: relative;
+  height: 100%;
+  margin: 0px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+}
+.preview-spec div {
+  position: relative;
+  text-align: center;
+}
+.preview-spec div h4 {
+  display: inline-block;
+  background-color: white;
+  width: max-content;
+  border-radius: 2.5rem;
+  padding: 10px;
+  position: relative;
+  font-size: 20px;
+  margin: -20px 0px 10px 0px;
+}
+.preview-spec div p {
+  position: relative;
+  margin: 0px;
+  right: 35px;
+}
+
+.logo-block-post-course {
+  width: 25%;
+  position: relative;
+}
+
+.spec-post-photo-circle {
+  width: 300px;
+  height: 300px;
+  background-color: lightgrey;
+  position: relative;
+  border-radius: 15rem;
+  object-fit: cover;
+  top: 10px;
+}
+
+.date {
+  width: 615px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.date table td {
+  overflow: hidden;
+  margin-right: 20px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+.date table td img {
+  height: 96px;
+  float: left;
+  margin-right: 15px;
+}
+
 footer {
   background-color: #1A1042;
   color: #fff;
@@ -1002,6 +1098,7 @@ footer .copy img {
   position: fixed;
   bottom: 0;
   right: 0;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   cursor: pointer;
   z-index: 99;
@@ -1015,6 +1112,7 @@ footer .copy img {
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
 
@@ -1023,18 +1121,22 @@ footer .copy img {
   height: 50%;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .cback-circle.fn1 {
+  -webkit-animation: pin 2.5s linear 0.4s infinite normal;
   animation: pin 2.5s linear 0.4s infinite normal;
 }
 .cback-circle.fn2 {
+  -webkit-animation: pin 2s linear 0s infinite normal;
   animation: pin 2s linear 0s infinite normal;
   background: none;
 }
 
 .cback:hover .cback-circle--phone {
+  -webkit-animation: hvr-phone 1.5s linear infinite normal;
   animation: hvr-phone 1.5s linear infinite normal;
 }
 .cback .phone-icon {
@@ -1045,45 +1147,108 @@ footer .copy img {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  -webkit-animation: phone-fn 2s infinite ease-in-out;
   animation: phone-fn 2s infinite ease-in-out;
 }
-@keyframes phone-fn {
+
+@-webkit-keyframes phone-fn {
   0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1) skew(1deg);
     transform: translate(-50%, -50%) rotate(0deg) scale(1) skew(1deg);
   }
   10% {
+    -webkit-transform: translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
     transform: translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
   }
   20% {
+    -webkit-transform: translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
     transform: translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
   }
   30% {
+    -webkit-transform: translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
     transform: translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
   }
   40% {
+    -webkit-transform: translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
     transform: translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
   }
   100%, 50% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1) skew(1deg);
     transform: translate(-50%, -50%) rotate(0deg) scale(1) skew(1deg);
+  }
+}
+@keyframes phone-fn {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1) skew(1deg);
+    transform: translate(-50%, -50%) rotate(0deg) scale(1) skew(1deg);
+  }
+  10% {
+    -webkit-transform: translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
+    transform: translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    -webkit-transform: translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
+    transform: translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    -webkit-transform: translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
+    transform: translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    -webkit-transform: translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
+    transform: translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
+  }
+  100%, 50% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1) skew(1deg);
+    transform: translate(-50%, -50%) rotate(0deg) scale(1) skew(1deg);
+  }
+}
+@-webkit-keyframes pin {
+  0% {
+    opacity: 0.6;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 @keyframes pin {
   0% {
     opacity: 0.6;
+    -webkit-transform: scale(0.5);
     transform: scale(0.5);
   }
   100% {
     opacity: 0;
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
-@keyframes hvr-phone {
+@-webkit-keyframes hvr-phone {
   0%, 100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
     transform: translate(-50%, -50%) scale(1);
     box-shadow: inset 0 0 20px -14px rgba(0, 0, 0, 0.75);
   }
   80% {
+    -webkit-transform: translate(-50%, -50%) scale(1.1);
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: inset 0 0 20px -4px rgba(0, 0, 0, 0.75);
+  }
+}
+@keyframes hvr-phone {
+  0%, 100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: inset 0 0 20px -14px rgba(0, 0, 0, 0.75);
+  }
+  80% {
+    -webkit-transform: translate(-50%, -50%) scale(1.1);
     transform: translate(-50%, -50%) scale(1.1);
     box-shadow: inset 0 0 20px -4px rgba(0, 0, 0, 0.75);
   }
@@ -1333,10 +1498,22 @@ footer .copy img {
   /*Disable Animation on Mobile Devices*/
   .animated {
     /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
     transition-property: none !important;
     /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
     transform: none !important;
     /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
     animation: none !important;
   }
 }

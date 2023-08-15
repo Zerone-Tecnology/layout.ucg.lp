@@ -64,6 +64,7 @@ $(function() {
 	$("nav ul a").mPageScroll2id();
 	
 	if ($(window).width() > 1200) {
+		
     $('.partners-items').addClass("owl-carousel");
 
 		$('.partners-items').owlCarousel({

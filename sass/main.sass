@@ -209,7 +209,6 @@ header
 
 		&:nth-last-child(2)
 			transform-origin: 0% 100%
-
 section
 	padding: 40px 0
 	background-color: #fff
@@ -460,8 +459,8 @@ section
 				img
 					vertical-align: top
 #info
-	background: linear-gradient(268.58deg, #1D0677 -13.7%, #FFA600 100%)
-	color: #fff
+	// background: linear-gradient(268.58deg, #1D0677 -13.7%, #FFA600 100%)
+	color: #000
 	position: relative
 	&::after
 		content: ''
@@ -746,21 +745,75 @@ section
 			width: 90%
 	.girl-2
 		right: 7%
-
-
-#post-course 
-	padding: 0
+.bg-color
+	background: linear-gradient(90deg, #5D3d32, #3a2537)
+#pre-course, #post-course 
+	color: #fff
+	text-align: center
 	position: relative
-	.container
-		background: linear-gradient(90deg, #5D3d32, #3a2537)
-		min-height: 500px
-		height: min-content
-		padding: 0px
-		margin: 0px
-		width: 100%
+	h4.title
+		font-size: 34px
+		margin-top: 0
+		// float: left
+		color: #fff
+	.logo
+		margin-bottom: 25px
+		float: right
+		img
+			max-width: 240px
+	.blocks
 		display: flex
-		p
-			color: white
+		flex-direction: row-reverse
+		clear: both
+		.event
+			text-align: left
+			.img
+				display: inline-block
+				width: 80px
+				vertical-align: top
+				img
+					width: 100%
+			.date
+				width: 65%
+				display: inline-block
+				text-align: left
+				font-size: 20px
+		.block
+			&.b-left
+				flex-grow: 1
+			&.b-right
+				padding-right: 25px
+				flex-grow: 2
+				text-align: center
+			.content
+				text-align: left
+				.sum
+					font-size: 20px
+					text-transform: uppercase
+			.speaker
+				p
+					text-transform: uppercase
+					margin-top: 0
+				.img
+					width: 300px
+					height: 300px
+					border-radius: 50%
+					overflow: hidden
+					background-color: #261d1d
+					margin: 0 auto
+					img
+						width: 100%
+				h4
+					background-color: #fff
+					color: #000
+					font-size: 20px
+					display: inline-block
+					border-radius: 30px
+					padding: 5px 15px
+					margin-top: 0
+#post-course 
+	.blocks
+		flex-direction: row
 .info-course
 	// flex-grow: 1
 	width: 100%
@@ -815,7 +868,6 @@ section
 	border-radius: 15rem
 	object-fit: cover
 	top: 10px
-
 
 .date
 	width: 615px

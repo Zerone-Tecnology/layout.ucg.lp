@@ -81,6 +81,13 @@
 	#form 
 		.girl, .logo
 			display: none
+	#pre-course, #post-course 
+		.logo, h4.title
+			float: none
+		.blocks .block .speaker
+			.img
+				width: 150px
+				height: 150px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -223,6 +230,14 @@
 		-ms-animation: none !important
 		animation: none !important
 
+	#pre-course, #post-course
+		.blocks 
+			.block
+				.event
+					.img
+						margin-top: 15px
+					.date
+						font-size: 16px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -268,6 +283,17 @@
 		margin-top: 25px
 	.cback
 		display: none
+	#pre-course, #post-course 
+		h4.title
+			font-size: 28px
+			margin-bottom: 0
+		.blocks 
+			flex-wrap: wrap
+			.block
+				width: 100%
+				display: block
+				.event .date
+					font-size: 20px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

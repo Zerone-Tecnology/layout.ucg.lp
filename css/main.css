@@ -554,15 +554,9 @@ section {
   color: #000;
   position: relative;
 }
-#info::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/bg-rectangle.png");
-  z-index: 0;
+#info.bg-color {
+  background: linear-gradient(268.58deg, #1D0677 -13.7%, #FFA600 100%);
+  color: #fff;
 }
 #info .container {
   z-index: 2;
@@ -924,7 +918,6 @@ section {
 }
 #pre-course .logo, #post-course .logo {
   margin-bottom: 25px;
-  float: right;
 }
 #pre-course .logo img, #post-course .logo img {
   max-width: 240px;
@@ -957,7 +950,7 @@ section {
 #pre-course .blocks .block.b-right, #post-course .blocks .block.b-right {
   padding-right: 25px;
   flex-grow: 2;
-  text-align: center;
+  text-align: left;
 }
 #pre-course .blocks .block .content, #post-course .blocks .block .content {
   text-align: left;
@@ -991,8 +984,56 @@ section {
   margin-top: 0;
 }
 
+#post-course .logo {
+  display: block;
+  width: 100%;
+  margin-bottom: 55px;
+}
+#post-course .logo img {
+  width: 30%;
+}
+#post-course h4.title {
+  float: none;
+  text-align-last: left;
+  font-size: 52px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#post-course .subtitle {
+  font-size: 24px;
+  margin: 10px 0;
+}
 #post-course .blocks {
   flex-direction: row;
+}
+#post-course .blocks .block .event .date {
+  line-height: 1.2em;
+  font-size: 30px;
+}
+#post-course .blocks .block.b-right {
+  width: 40%;
+  text-align: center;
+}
+#post-course .blocks .block.b-left {
+  width: 60%;
+  text-align: left;
+}
+#post-course .blocks .block.b-left .btn {
+  margin-top: 25px;
+  background-color: #fff;
+  border-radius: 15em;
+  color: #000;
+  font-weight: 800;
+  font-size: 20px;
+}
+#post-course .blocks .block .speaker h4 {
+  margin-bottom: 10px;
+}
+#post-course .blocks .block .speaker .img {
+  background-color: #ddd;
+}
+#post-course .blocks .block .speaker .img img {
+  margin-top: 25px;
 }
 
 .info-course {
@@ -1665,6 +1706,12 @@ footer .copy img {
   }
   #pre-course .blocks .block .event .date, #post-course .blocks .block .event .date {
     font-size: 20px;
+  }
+  #post-course .blocks .block.b-right {
+    width: 100%;
+  }
+  #post-course .blocks .block .event .date {
+    font-size: 24px;
   }
 }
 /* Custom, iPhone Retina */

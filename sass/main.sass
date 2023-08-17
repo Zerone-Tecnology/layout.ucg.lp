@@ -459,18 +459,11 @@ section
 				img
 					vertical-align: top
 #info
-	// background: linear-gradient(268.58deg, #1D0677 -13.7%, #FFA600 100%)
 	color: #000
 	position: relative
-	&::after
-		content: ''
-		position: absolute
-		left: 0
-		top: 0
-		width: 100%
-		height: 100%
-		background-image: url('../img/bg-rectangle.png')
-		z-index: 0
+	&.bg-color
+		background: linear-gradient(268.58deg, #1D0677 -13.7%, #FFA600 100%)
+		color: #fff
 	.container
 		z-index: 2
 		position: relative
@@ -754,11 +747,9 @@ section
 	h4.title
 		font-size: 34px
 		margin-top: 0
-		// float: left
 		color: #fff
 	.logo
 		margin-bottom: 25px
-		float: right
 		img
 			max-width: 240px
 	.blocks
@@ -784,7 +775,7 @@ section
 			&.b-right
 				padding-right: 25px
 				flex-grow: 2
-				text-align: center
+				text-align: left
 			.content
 				text-align: left
 				.sum
@@ -811,9 +802,49 @@ section
 					border-radius: 30px
 					padding: 5px 15px
 					margin-top: 0
-#post-course 
+#post-course
+	.logo
+		display: block
+		width: 100%
+		margin-bottom: 55px
+		img
+			width: 30%
+	h4.title
+		float: none
+		text-align-last: left
+		font-size: 52px
+		margin-bottom: 0
+		padding-bottom: 0
+	.subtitle
+		font-size: 24px
+		margin: 10px 0
 	.blocks
 		flex-direction: row
+		.block
+			.event
+				.date
+					line-height: 1.2em
+					font-size: 30px
+			&.b-right
+				width: 40%
+				text-align: center
+			&.b-left
+				width: 60%
+				text-align: left
+				.btn
+					margin-top: 25px
+					background-color: #fff
+					border-radius: 15em
+					color: #000
+					font-weight: 800
+					font-size: 20px
+			.speaker
+				h4
+					margin-bottom: 10px
+				.img
+					background-color: #ddd
+					img
+						margin-top: 25px
 .info-course
 	// flex-grow: 1
 	width: 100%
